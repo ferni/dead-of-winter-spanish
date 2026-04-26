@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1614" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Crossroads" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Crossroads — Dead of Winter</title>
+</head>
+<body>
+  <main id="app">
+    <!-- START SCREEN -->
+    <section class="screen screen-start" data-screen="start">
+      <div class="start-inner">
+        <h1 class="game-title">Crossroads</h1>
+        <p class="game-subtitle">Dead of Winter</p>
+        <button class="btn btn-primary btn-lg" data-action="start">Comenzar</button>
+        <p id="start-status" class="status-text"></p>
+      </div>
+    </section>
+
+    <!-- DRAW SCREEN -->
+    <section class="screen screen-draw hidden" data-screen="draw">
+      <div class="draw-inner">
+        <p id="pass-message" class="pass-message hidden">Pásale el teléfono al próximo jugador</p>
+        <button class="btn btn-primary btn-lg" data-action="draw">Robar carta</button>
+        <p class="cards-remaining"><span id="cards-remaining-count">90</span> cartas restantes</p>
+      </div>
+    </section>
+
+    <!-- CARD SCREEN -->
+    <section class="screen screen-card hidden" data-screen="card">
+      <article class="card">
+        <header class="card-header">
+          <h2 id="card-title" class="card-title"></h2>
+        </header>
+
+        <div id="card-trigger" class="card-trigger"></div>
+
+        <div class="card-description-row">
+          <button id="audio-btn" class="audio-btn" aria-label="Reproducir audio">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path id="audio-icon-play" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.06A4.5 4.5 0 0 0 16.5 12zM14 3.23v2.06a7 7 0 0 1 0 13.42v2.06A9 9 0 0 0 14 3.23z"/>
+            </svg>
+          </button>
+          <p id="card-description" class="card-description"></p>
+        </div>
+
+        <ul id="card-options" class="card-options"></ul>
+
+        <button class="btn btn-secondary btn-lg btn-next" data-action="next">Próximo turno</button>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

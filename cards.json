@@ -1,0 +1,1723 @@
+{
+  "metadata": {
+    "game": "Dead of Winter",
+    "deck": "Crossroads (Spanish)",
+    "total_cards": 90,
+    "sheets": 10,
+    "cards_per_sheet": 9,
+    "schema": {
+      "id": "Card identifier formatted as 'sheet-card' (e.g. '01-1')",
+      "sheet": "Source sheet number (1-10)",
+      "card": "Card position on sheet (1-9, top-left to bottom-right, row-major)",
+      "title": "Card title",
+      "trigger": "Italic trigger condition that activates the card (ends with ':')",
+      "description": "Narrative description shown when the trigger fires",
+      "options": "Array of resolution options. Each entry has 'label' (e.g. 'OPCION 1', 'OPCION UNICA', 'PULGAR ARRIBA') and 'text'.",
+      "audio_file": "Path to audio narration file (mp3)"
+    }
+  },
+  "cards": [
+    {
+      "id": "01-1",
+      "sheet": 1,
+      "card": 1,
+      "title": "PROFETA",
+      "trigger": "Si el jugador controla un superviviente exiliado y comparte una localizacion con un superviviente no exiliado:",
+      "description": "Estás ocupándote de tus cosas, totalmente inmerso en tu trabajo, cuando de repente ves a una de las ovejas perdidas que pertenece a esa colonia abandonada por Dios? ¿Sabes tú lo que hay que hacer?",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Te acercas a la pobre criatura y hablas de los pecados que la colonia ha cometido. La oveja empieza a llorar, y confiesa su culpa. Acunas a la criatura en tus brazos, y prometes que todo irá bien. Toma un Superviviente no Exiliado que comparta una Localizacion con uno de tus Supervivientes y añádelos a tus Seguidores."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "No es una oveja, pero sí una cabra. Sigilosamente detrás de ella, la incapacitas con un ladrillo, entonces la marcas con un hierro al rojo sobre la carne. Cuando vuelva a la colonia, tus advertencias estarán allí para que todos las vean. La colonia baja 1 punto la Moral."
+        }
+      ],
+      "audio_file": "audio/profeta.mp3"
+    },
+    {
+      "id": "01-2",
+      "sheet": 1,
+      "card": 2,
+      "title": "MUSICA",
+      "trigger": "Si el jugador realiza una acción de búsqueda con un superviviente no exiliado:",
+      "description": "Te ríes mientras empujas los ruinosos estantes a un lado, dejando al descubierto un estuche de guitarra. En su interior encuentras una guitarra acústica en maravillosas condiciones. Te sientas con ella y contienes la respiración, y le das un rasgueo. Te retuerces de dolor ante el ruido, pero después de unos minutos de adaptación, la voz, las notas que salen del instrumento son suficientes para formar lágrimas en tus ojos.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Esa noche, mientras las cosas se calman en la colonia, extraes tu recién descubierto premio y tocas. Tu canción alivia a los presentes, y sirve de recordatorio de que hay más cosas para un ser humano que sólo sobrevivir. Subes 1 punto la Moral."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "A la mañana siguiente, cuando el pueblo se levanta para el desayuno, tocas una vieja canción espiritual que habla de esperanza y las cosas buenas que esperan más allá de toda dificultad y dolor. Todos los jugadores tiran un dado de Acción extra en el comienzo de la siguiente ronda."
+        }
+      ],
+      "audio_file": "audio/musica.mp3"
+    },
+    {
+      "id": "01-3",
+      "sheet": 1,
+      "card": 3,
+      "title": "PEQUEÑOS SUPERVIVIENTES",
+      "trigger": "Si el jugador mueve a un superviviente no exiliado a una localización donde no hay otros supervivientes:",
+      "description": "El haz de tu linterna se mueve a través de la destrucción. Es evidente que este lugar ha sido abordado por otros carroñeros, y empiezas a dudar que algo de valor haya quedado atrás. Tu luz se mueve a través de una ventana, y sólo pierdes un grito ahogado cuando ves unos ojos mirándote a través del cristal. \"Oh Dios\", dices. El más joven no puede tener más de cinco años de edad. La mayor quizás nueve. Ellos desaparecen antes de que puedas recuperarte, sus ojos estaban llenos de miedo y desconfianza.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Añade 3 Supervivientes Indefensos a la colonia. Sube 1 punto la Moral."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Los pequeños supervivientes, al parecer, pueden sobrevivir por su cuenta. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/pequenos-supervivientes.mp3"
+    },
+    {
+      "id": "01-4",
+      "sheet": 1,
+      "card": 4,
+      "title": "VOYEUR",
+      "trigger": "Si un jugador controla un superviviente que comparte una localización con un superviviente que otro jugador controla y estos son los 2 únicos supervivientes en esa localización:",
+      "description": "Tú los ves desde tu escondite, tomando nota del equipo seleccionado que ellos han extendido sobre el suelo. Interesante. A veces las posesiones pueden decir mucho acerca de la persona que los posee. ¿Tal vez podrías usar esto para tu beneficio? Mira la mano del jugador que controla a los otros Supervivientes en esa Localización.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Ves algo que deseas. Chantajeas al superviviente, amenazando con revelar sus secretos al grupo. Toma una carta de tu elección de la mano de ese jugador. Ninguno de los jugadores puede hablar de la carta que acabas de robar. Esta carta no se puede jugar hasta la próxima ronda."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Muestra la mano de ese jugador a todos los otros jugadores."
+        }
+      ],
+      "audio_file": "audio/voyeur.mp3"
+    },
+    {
+      "id": "01-5",
+      "sheet": 1,
+      "card": 5,
+      "title": "ADICCION",
+      "trigger": "Si el jugador juega una carta de medicina para curar a un superviviente:",
+      "description": "Santo Cielo, esto es real. La mayoría de los analgésicos tienen una gran cantidad de carga, pero realmente este tipo le ha tocado el premio gordo. Oh Dios, Te sientes tan bien. Ha sido tan largo. ¿Cuándo fue la última vez que sentiste así? Demonios, ¿cuándo fue la última vez que sentiste otra cosa que no fuera terror y desesperación? ¡Quieres más! Sólo la idea de no tener esa sensación de nuevo ... es casi demasiado.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Te tragas el resto de las pastillas a la vez y se derriten en un cálido olvido. Matas al Superviviente en el que fue utilizada la Medicina. No reduzcas la Moral."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Coloca esta carta bajo el Superviviente en el que se usó la Medicina. Mientras controles este Superviviente, al principio de tu turno, puedes jugar una carta de Medicina aplicando su efecto a este Superviviente. Si no lo haces, debes quitar 1 de tus dados de Acción de la reserva de dados de Acción Disponibles a la reserva de dados de Acción Gastados."
+        }
+      ],
+      "audio_file": "audio/adiccion.mp3"
+    },
+    {
+      "id": "01-6",
+      "sheet": 1,
+      "card": 6,
+      "title": "HAMBRE",
+      "trigger": "Si el jugador coloca un superviviente masculino y a un superviviente indefenso en la colonia:",
+      "description": "El tipo nuevo dice, \"Eh tio, agradezco la oferta para unirme a tu colonia, pero ¿ves a ese tipo de allá? Es Earl el Gordo. Sé que a ti no le gusta. En realidad a mi tampoco. Pero su madre era una buena mujer, y le prometí que siempre lo llevaría conmigo.\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Earl \"el Gordo\" come toda la comida. Retira todos los Alimentos de tu reserva."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "El nuevo chico mira el sándwich en sus manos con disgusto, la cubierta de pan rancio ahumado, carne grasosa que huele casi como la carne de cerdo. ¡Casi! Una lágrima corre por su cara y susurra, \"Siempre conmigo\" antes de tomar un bocado. Añade 5 Alimentos a tu reserva y pierdes 1 punto de Moral."
+        }
+      ],
+      "audio_file": "audio/hambre.mp3"
+    },
+    {
+      "id": "01-7",
+      "sheet": 1,
+      "card": 7,
+      "title": "ATRACO",
+      "trigger": "Si el jugador controla un superviviente no exiliado que comparte una localización con un superviviente exiliado:",
+      "description": "Unas manos ásperas te atrapan desde atrás, y tu cabeza es estrellada contra una pared. Intentas volver sobre tus pasos, pero terminas tirado en el suelo cerca de las botas de alguien. Tu atacante se arrodilla y una voz te susurra en bajo, \"Sólo quiero tu equipo, puedo matarte por ello, o puedes ahorrarse un montón de problemas y entregarmelo voluntariamente. Por favor, creeme que no me importaría hacer cualquiera de las dos cosas.\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Da todos las cartas de tu mano, excepto una, al jugador que controla al Superviviente Exiliado."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Intentas defenderte. Añade 2 Heridas al Superviviente que controlas que comparte Localizacion con un Superviviente Exiliado. O, si tienes un Arma, puedes en su lugar, matar al Superviviente Exiliado y añadir sólo 1 Herida a tu Superviviente."
+        }
+      ],
+      "audio_file": "audio/atraco.mp3"
+    },
+    {
+      "id": "01-8",
+      "sheet": 1,
+      "card": 8,
+      "title": "HORDA",
+      "trigger": "Si el jugador mueve un superviviente y no juega una carta de combustible:",
+      "description": "La nieve cae pesadamente a medida que el mundo se vuelve blanco, y la visibilidad se reduce a sólo unas pocos metros a tu alrededor. Por supuesto una ventisca vendría ahora. Sin embargo, no estás solo. Otra forma se mueve a través de la tormenta, gesticulando frenéticamente mientras lucha entre la nieve. Y luego otro. Y otro. El estómago se tambalea cuando te das cuenta que has caminado en medio de una horda de muertos. Sopesando tus opciones, sospechas que la reducida visibilidad puede ayudarte a pasar desapercibido. Pero hay que admitir que las probabilidades no están a tu favor.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Continúas adelante, haciendo todo lo posible por evitarlos. Haz la tirada de Riesgo 3 veces más en ese Superviviente."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Tu objetivo es importante, pero también lo es no convertirte en uno de ellos. Sitúa al Superviviente de vuelta a la Localización desde la cual fue movido (no cuenta como un movimiento). Ese Superviviente no se puede mover de nuevo durante este turno."
+        }
+      ],
+      "audio_file": "audio/horda.mp3"
+    },
+    {
+      "id": "01-9",
+      "sheet": 1,
+      "card": 9,
+      "title": "MAUDE",
+      "trigger": "Si el jugador controla un superviviente no exiliado que está en el supermercado:",
+      "description": "Un gruñido llama tu atención y ves a una Zombi atrapada entre dos coches. Ella desgarra, sin ningún propósito, su uniforme de \"Meat & Stuff\" manchado de sangre vieja. Un golpe rápido en su cabeza termina con ella y ves la etiqueta con su nombre que dice \"Maude\". Ella parece haber sido aplastada contra su propio coche mientras ella estaba tratando de llenar su maletero con suministros.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Llevas la comida a la colonia de inmediato. Coloca al Superviviente movido en la colonia (esto no cuenta como un movimiento), y añade 3 Alimentos a la reserva."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Coges la comida y la añades a tu mochila para más adelante. Quiere sonreír por tu buena fortuna, pero por alguna razón no puedes dejar de pensar en Maude. Revela cartas de la parte superior del mazo del Supermercado hasta encontrar 2 cartas de Alimentos. Añadelas a tu mano. Baraja el resto de las cartas mostradas y devuelvelas al mazo. No puedes jugar cartas de Alimento durante este turno."
+        }
+      ],
+      "audio_file": "audio/maude.mp3"
+    },
+    {
+      "id": "02-1",
+      "sheet": 2,
+      "card": 1,
+      "title": "HIELO FINO",
+      "trigger": "Si el jugador mueve a un superviviente:",
+      "description": "El lago está congelado, creando un atajo tentador. No te habías arriesgado en la vida que tenías antes, pero todas las reglas han cambiado y también lo ha hecho el precio de la supervivencia. La perspectiva de tener más tiempo para buscar provoca que lo estés considerando seriamente. Colocas un pie en el hielo y lo oyes crujir. ¿Eso es normal? Probablemente. Otro pie produce un ruido similar. ¿Realmente vas a hacerlo?",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Tira un dado. Con un resultado de 1-3, el Superviviente movido recibe 1 Herida de congelación. Con un resultado de 4-6, busca en el mazo de Objetos una carta de tu elección y añadela a tu mano."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Te alejas. No vale la pena. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/hielo-fino.mp3"
+    },
+    {
+      "id": "02-2",
+      "sheet": 2,
+      "card": 2,
+      "title": "LEALTADES DUDOSAS",
+      "trigger": "Si el jugador tiene más supervivientes en su grupo que 1 o más jugadores:",
+      "description": "\"Me preocupo por ti. Eso no cambiará nunca. Pero no puedo seguir con esto. Lo siento. No voy a contarles lo que estás haciendo, pero no puedo ser parte de esto por más tiempo. No ahora\".",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"Entiendo mejor de lo que piensas. Tal vez yo sabía que este día llegaría. Pero tu felicidad es más importante para mí que cualquier otra cosa, así que no voy a interponerme en tu camino.\" Retira una carta de Superviviente de tus Seguidores y añádelo a los Seguidores de un jugador que tenga un número menor de Supervivientes que tú."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Ya veo. No importa lo sucias que están tus manos, pero tan pronto como las mías parecen manchadas, estás listo para irte. Sé lo que te quita el sueño. Sé que nunca serás capaz de lavar las manchas. Y tan pronto como te hayas ido, todo el mundo lo sabrá también\". Tira un dado. Con un resultado de 3 o menos, pierdes 1 punto de Moral."
+        }
+      ],
+      "audio_file": "audio/lealtades-dudosas.mp3"
+    },
+    {
+      "id": "02-3",
+      "sheet": 2,
+      "card": 3,
+      "title": "ACCIDENTE DE COCHE",
+      "trigger": "Si el jugador utiliza combustible al mover un superviviente no exiliado:",
+      "description": "Tus faros cortan a través de la oscuridad, y los copos de nieve se arremolinan al azar por un viento amargo. El coche no está cerca de estar lo cálido que tú quisieras, pero cada gota de combustible es precioso. Cuando el parabrisas comienza a empañarse, buscas a tientas el cuadro de instrumentos para encender la calefacción. De repente, un niño camina hacia las luces que se aproximan. El instinto se hace cargo antes de que tu cerebro registre que el niño está muerto, y sacudes con fuerza el volante. Las ruedas chirrían mientras tu coche cae a un lado de la carretera. El tiempo se ralentiza mientras el mundo gira asquerosamente a tu alrededor.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Esperas en el coche destrozado a que la colonia te rescate. Añade al Superviviente movido una Herida de congelación. Coloca al Superviviente movido en la colonia (esto no cuenta como un movimiento)."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Luchas camino a tu destino, aturdido por el accidente. Coloca al Superviviente movido en la Localización a la que se dirigía. Haz la tirada de Riesgo 3 veces en ese Superviviente."
+        }
+      ],
+      "audio_file": "audio/accidente-de-coche.mp3"
+    },
+    {
+      "id": "02-4",
+      "sheet": 2,
+      "card": 4,
+      "title": "PELEA DE AMANTES",
+      "trigger": "Si 2 supervivientes humanos que el jugador controla comparten una localización fuera de la colonia, y ellos son los únicos 2 supervivientes en esa localización:",
+      "description": "\"No me gusta la cantidad de tiempo que has estado pasando con él.\" \"No puedes estar hablando en serio. Ahora no. El mundo entero ha caído en pedazos, apenas somos capaces de mantenernos con vida, y ahora quieres volver a examinar tus problemas de celos? ¡Crece!\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"¿Crece? ¡Yo no soy el que utiliza el fin del mundo para comportarme como una puta! ¡Por lo menos ahora se lo bajo que te has dejado caer!\" Añade 4 marcadores de Ruido en la ubicación que los amantes comparten."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"No es que no confíe en ti. Es él. No has visto sus ojos siguiéndote cuando caminas. Vamos. Vayamonos lejos y yo te mostraré lo adulto que soy!\" Los amantes no pueden atacar, buscar o mover durante el resto de este turno."
+        }
+      ],
+      "audio_file": "audio/pelea-de-amantes.mp3"
+    },
+    {
+      "id": "02-5",
+      "sheet": 2,
+      "card": 5,
+      "title": "NAVIDAD",
+      "trigger": "Si el jugador controla un superviviente que se encuentra en la colonia:",
+      "description": "\"Estuve hablando con algunas de los demás personas, y bueno, nosotros creemos que mañana podría ser Navidad. Tal vez es una estupidez aferrarse, pero creo que la gente podría tener una distracción. Qué tal si hacemos una cena para todos? Una verdadera cena, quiero decir.\" Todos los jugadores con 1 o más Supervivientes en la colonia deben votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Gasta 5 Alimentos. Sube 1 punto de Moral. Si Forest Plum está en juego y no es Exiliado, el jugador que controla a Forest Plum podrá robar hasta 4 cartas del mazo de Supermercado. Él debe revelarlas y dar cada una de ellas a otro jugador de su elección."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "No pasa nada."
+        }
+      ],
+      "audio_file": "audio/navidad.mp3"
+    },
+    {
+      "id": "02-6",
+      "sheet": 2,
+      "card": 6,
+      "title": "DERRUMBANDO BARRERAS",
+      "trigger": "Si el jugador controla un superviviente que está en la colonia y hay al menos 1 barricada y 1 zombi en la colonia:",
+      "description": "\"Tenemos un problema. Están amontonándose en las barricadas. Lo he visto - no son más que un muro de carne, dientes y garras. No hay forma de que las barricadas puedan aguantar bajo esa cantidad de peso. Está todo improvisado de cualquier manera. Me temo que no tenemos opción. Necesitamos enviar a un equipo para despejarlos\". Todos jugadores con 1 o más Supervivientes en la colonia deben votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Cada jugador que controla 1 o más Supervivientes en la colonia elige un Superviviente que ellos controlan en la colonia y realiza una tirada de Riesgo en esos Supervivientess."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "Elimina todas las Barricadas de la colonia."
+        }
+      ],
+      "audio_file": "audio/derrumbando-barreras.mp3"
+    },
+    {
+      "id": "02-7",
+      "sheet": 2,
+      "card": 7,
+      "title": "MARIA LOPEZ",
+      "trigger": "Si el jugador que controla a María y ella no es exiliada:",
+      "description": "Sitúa a María en la escuela, si es posible (esto no cuenta como un movimiento). Los pasillos de la escuela están vacíos, y María cierra los ojos e inhala profundamente. Todavía huele igual, y por un momento se pone de pie en silencio y se siente como en otra tranquila y temprana mañana, momentos antes de que los pasillos estallen con la llegada de los niños. Abre los ojos y grita - hay niños por todas partes, y María se agazapa de espaldas contra una pared de taquillas. Pero los niños no atacan.\" Oh Dios\", dice tan pronto se da cuenta. \"Estáis vivo!\" Y ella ve la delgadez de sus cuerpos y el hambre en sus rostros.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "\"Sé donde hay un poco de comida.\" Retira 3 alimentos del suministro. \"¿Para mí? Gracias monada!\" Busca en el mazo de la Escuela una carta de tu elección y añádela a tu mano."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "No hay mucho que puedes hacer por ellos. Abres la despensa de la escuela al salir. Busca en el mazo de la Escuela todas las cartas de Alimentos y elimínalas de la partida."
+        }
+      ],
+      "audio_file": "audio/maria-lopez.mp3"
+    },
+    {
+      "id": "02-8",
+      "sheet": 2,
+      "card": 8,
+      "title": "BRIAN LEE",
+      "trigger": "Si el jugador controla a Brian y Brian está en la colonia:",
+      "description": "Brian había pensado que sus días de politiquería habían terminado, pero ahora parece que esa no es la mejor forma en que podría contribuir a la colonia. Por lo que se aclara la garganta y sube hasta el estrado.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"¡Amigos mios!! ¿Quién de nosotros no se siente especialmente orgulloso, cuando mira alrededor y ve las grandes obras que hemos logrado aquí? Y, sin embargo, a pesar de nuestro progreso, la asistencia médica ha demostrado ser, a lo sumo, insuficiente. Tengo un plan para apoderarsenos del hospital y asegurar que tenemos acceso a los suministros que necesitamos\". Retira todos los Zombis del Hospital y coloca 4 Barricadas allí."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Miro vuestras caras hoy, y veo una de las fuerzas de trabajo más intensas que jamás haya conocido. Pero también veo el hambre. Es el momento de premiar nuestro duro trabajo, con el suministro de alimentos adecuados. Tengo un plan para tomar y contener el supermercado, algo que cambiaría el curso de nuestro futuro para siempre.\" Elimina todos los Zombis del Supermercado y coloca 4 Barricadas allí."
+        }
+      ],
+      "audio_file": "audio/brian-lee.mp3"
+    },
+    {
+      "id": "02-9",
+      "sheet": 2,
+      "card": 9,
+      "title": "TALIA JONES",
+      "trigger": "Si el jugador controla a Talia:",
+      "description": "La mayoría de los adivinos son timadores, y seguramente quizás, tú demasiado, pero tú no ejerces tu profesión prediciendo cosas que se podrían aplicar a cualquiera. Tu madre te entrenó a estar siempre alerta y en constante análisis del mundo que te rodea. Como resultado, tu cerebro procesa un nivel casi obsceno de detalle, lo que te permite predecir eventos con una precisión sorprendente. No es que vayas a admitir tu secreto a nadie más ...",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Encajas las piezas para darte cuenta dónde donde deben estar ocultos los suministros perdidos. Escoge un mazo de Objeto. Busca en ese mazo 4 cartas de tu elección. Añadelas a tu mano y luego baraja el mazo elegido."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Ves un patrón en los hechos pasados, y te das cuenta de que la colonia está en grave peligro. La próxima vez que una Crisis sea revelada, sácala del juego y omite la fase \"resolución de Crisis\" en la ronda."
+        }
+      ],
+      "audio_file": "audio/talia-jones.mp3"
+    },
+    {
+      "id": "03-1",
+      "sheet": 3,
+      "card": 1,
+      "title": "PASO DE ALCANTARILLADO",
+      "trigger": "Si el jugador controla un superviviente que está en la biblioteca:",
+      "description": "Casualmente pasas por delante de un pasillo de los registros públicos, cuando una idea te golpea. En media hora localizas el Plan de aguas residuales de la ciudad, y trazas una ruta que va desde una boca de inspección a las afueras de la colonia y todo el camino al hospital. Muestras tu descubrimiento a la colonia, pero no hay nadie interesado en atravesar un laberinto negro de residuos.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Estás aterrorizado, pero sabes que es tu oportunidad de hacer algo significativo para la colonia, aunque no se den cuenta. Decides tratar de despejar el camino. Elige un Superviviente que tú controles en la biblioteca. Tira un dado. Haz la tirada de Riesgo en el Superviviente elegido un número de veces igual al resultado del dado. Si no mueres por esas tiradas de Riesgo, los Supervivientes no tienen que hacer la tirada de Riesgo durante el resto del juego, cuando se muevan de la colonia al Hospital o del Hospital a la colonia. Coloca esta carta junto al Hospital como referencia."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "No pasa nada."
+        }
+      ],
+      "audio_file": "audio/paso-de-alcantarillado.mp3"
+    },
+    {
+      "id": "03-2",
+      "sheet": 3,
+      "card": 2,
+      "title": "CABALLO",
+      "trigger": "Si el jugador mueve un superviviente no exiliado:",
+      "description": "Te deslizas a través de los callejones, moviéndose tan silenciosamente como puedes, cuando escuchas el clip-clop de unos cascos de caballo sobre el pavimento. Mirando entre los restos de una panadería quemada, ves un caballo medio famélico caminando por la calle. El pobre animal parece como si hubiese pasado por muchas cosas, pero si sigue caminando por la ciudad no tendrá ninguna posibilidad de sobrevivir.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Coloca esta carta al Superviviente movido. Para el resto de la partida, el Superviviente ya no tiene que hacer la tirada de Riesgo cuando se mueve. Siempre y cuando el Superviviente no esté Exiliado, durante la fase de la colonia, la colonia tiene que pagar 1 Alimento adicional."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Lo siento, vieja.\" Añade 3 Alimentos a la reserva."
+        }
+      ],
+      "audio_file": "audio/caballo.mp3"
+    },
+    {
+      "id": "03-3",
+      "sheet": 3,
+      "card": 3,
+      "title": "ARTHUR THURSTON",
+      "trigger": "Si el jugador que controla a Arthur y él no está exiliado:",
+      "description": "Sitúa a Arthur en la escuela, si es posible (esto no cuenta como un movimiento). La escuela huele a humedad, y Arthur frunce el ceño. Es difícil estar aquí y no dejar que el director se haga cargo. Tal vez algún día la pesadilla termine y pueda volver y limpiar el lugar. De repente, un pequeño par de manos se alargan por debajo de un escritorio y le agarra los tobillos. Se da cuenta de que es un niño, y no un muerto cualquiera. Pero el pequeño monstruo está sucio y con un aspecto salvaje. La mano de otro niño sale de la oscuridad y se apodera alrededor de su muñeca izquierda. Antes de que pueda reaccionar, todos están encima de él.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Arthur combate contra los niños, pero es herido gravemente. Añade 2 Heridas a Arthur."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Se le dispara su arma en la maraña de cuerpos pequeños. Los niños se dispersan, pero él siente la sangre caliente en sus labios. El cielo me ayude, piensa. Estaba equivocado. Las cosas nunca volverán a ser como antes. Pierdes 1 punto de Moral."
+        }
+      ],
+      "audio_file": "audio/arthur-thurston.mp3"
+    },
+    {
+      "id": "03-4",
+      "sheet": 3,
+      "card": 4,
+      "title": "GRAY BEARD",
+      "trigger": "Si el jugador mueve un superviviente y Gray Beard se encuentra actualmente en el mazo de superviviente:",
+      "description": "Estás caminando a lo largo de la periferia de la colonia cuando escuchas los estallidos rápidos y familiares de un rifle automático próximos en la distancia. Asumes que alguien de la colonia está en problemas, y corres hacia el sonido. En cambio, encuentras a un hombre alto y desaliñado reventando a balas una masa de no-muertos. Gira su arma en cuanto llegas, y tus manos se elevan hacia arriba. \"Estoy vivo\", gritas. \"¡No dispare!\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"Coge lo que quieras. No quiero ningún problema!\" Elige una carta al azar de tu mano. Retírala del juego."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Nos vendría bien un hombre como tú en nuestro grupo\", dices: \"No me importaría tener a alguien vigilando mi espalda - mi tripulación está toda muerta\" dice asperamente el extraño. \"Pero así sabéis. No sigo las órdenes de los demás del todo bien. Si quieres mi ayuda, seguimos mis reglas.\" Busca en el mazo de Superviviente a Gray Beard, hazle líder de tu grupo y coloca esta carta debajo de él. Una vez por ronda, Gray Beard no tiene que hacer la tirada de Riesgo al atacar. Mientras controles a Gray Beard, no puedes añadir cartas a una Crisis."
+        }
+      ],
+      "audio_file": "audio/gray-beard.mp3"
+    },
+    {
+      "id": "03-5",
+      "sheet": 3,
+      "card": 5,
+      "title": "ALEXIS GRAY",
+      "trigger": "Si el jugador controla a Alexis y ella no esta exiliada:",
+      "description": "Coloca a Alexis en la biblioteca, si es posible, (esto no cuenta como un movimiento). Ella gime de emoción y susurra: \"¡Mira todos estos libros!\" Alexis gira sobre sí misma y se queda mirando a las estanterías repletas de libros, es como si ella estuviera mirando este viejo lugar por primera vez. \"Nadie ha estado aquí supongo\", dice ella, y sacude su cabeza. Ella se pregunta, sentada en cuclillas, que nadie se daría cuenta de la mina de oro de información contenida en este viejo edificio público. Todos los secretos de las habilidades cotidianas que la mayoría de la gente había olvidado en su mundo de comodidad electrónica estaban aquí, a la espera de ser descubiertas. Agricultura, electrónica, uso de armas y mantenimiento.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Alexis no puede alejarse de la Biblioteca para el resto del juego."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Pero no\", dice ella, sacudiendo la cabeza. Las lágrimas se acumulan en sus ojos. \"No puedo volver aquí. Me duele mucho ver este lugar caer en la decadencia\". Coloca a Alexis en la colonia (esto no cuenta como un movimiento). Alexis no puede ir a la Biblioteca el resto del juego."
+        }
+      ],
+      "audio_file": "audio/alexis-gray.mp3"
+    },
+    {
+      "id": "03-6",
+      "sheet": 3,
+      "card": 6,
+      "title": "SUPERVIVIENTE HERIDO",
+      "trigger": "Si el jugador realiza una búsqueda con un superviviente no exiliado:",
+      "description": "\"Oh, gracias a Dios que estás vivo\", dice el desconocido. \"Tenía miedo de que fueras uno de los muertos. Dios, estoy en mala forma; estaba con otros, que conocí hace un par de semanas, pero nuestro grupo fue dividiendose gradualmente o muriendo. Sería genial hacer equipo con alguien de nuevo. ¿Tienes un grupo? \"Su mirada se pasea desde los ojos del extraño a los trapos ensangrentados envueltos alrededor de su mano derecha. \"¡Oh esto? Esto no es nada, hombre. Sólo unos cortes con algunos cristales rotos cuando estaba saqueando una tienda allí.\" El desconocido se ríe, apagado, como si nada, pero parece nervioso por algo.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Le hablas al extraño sobre la colonia. Roba una carta del mazo de Supervivientes y añadelo a tus Seguidores. Después de los nuevos Supervivientes estén situados en la colonia, haz la tirada de Riesgo dos veces en esos Supervivientes."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Lo siento amigo, pero prefiero ir por libre. No es nada personal.\" No pasa nada."
+        }
+      ],
+      "audio_file": "audio/superviviente-herido.mp3"
+    },
+    {
+      "id": "03-7",
+      "sheet": 3,
+      "card": 7,
+      "title": "COMODIDADES DEL HOGAR",
+      "trigger": "Si el jugador controla un superviviente que se encuentra en la colonia:",
+      "description": "\"La moral alrededor de este lugar se encuentra en un mínimo histórico. Sé que el combustible es escaso, pero imagino lo que las duchas y comidas calientes podrían hacer a todo el mundo? Hace sentirnos humanos otra vez. A veces, creo que nos centramos tanto en las necesidades obvias que nos olvidamos de los emocionales, ¿sabes?\"",
+      "options": [
+        {
+          "label": "OPCION UNICA",
+          "text": "Los jugadores pueden colocar en conjunto 3 cartas de Combustible en el Vertedero (sin necesidad de utilizar la habilidad de las cartas) para levantar la moral en 1. Si no lo hacen, no pasa nada."
+        }
+      ],
+      "audio_file": "audio/comodidades-del-hogar.mp3"
+    },
+    {
+      "id": "03-8",
+      "sheet": 3,
+      "card": 8,
+      "title": "RESIDUOS TOXICOS",
+      "trigger": "Si el jugador controla un superviviente que se encuentra en la colonia:",
+      "description": "\"Le dije a ese idiota perezoso que sacara fuera de las instalaciones, el combustible y los residuos sanitarios. Así que supongo que no lo hizo. Sólo Dios sabe que se ha estado filtrando en la tierra hasta ahora. ¿Está nuestra reserva de agua contaminada? ¿Y el jardín? Y por supuesto ahora hace más frío afuera que el culo de un muñeco de nieve y tenemos que ir a limpiar esa porquería\". Todos los jugadores con 1 o más Supervivientes en la colonia deben votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Cada jugador debe colocar una Herida por congelación en un Superviviente que ellos controlen en la colonia."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "Coloca todas las cartas de Combustible y Medicina que han sido retiradas de juego en el Vertedero."
+        }
+      ],
+      "audio_file": "audio/residuos-toxicos.mp3"
+    },
+    {
+      "id": "03-9",
+      "sheet": 3,
+      "card": 9,
+      "title": "JENNY CLARK",
+      "trigger": "Si el jugador realiza una Búsqueda con Jenny Clark y ella no está Exiliada:",
+      "description": "El tarro de peniques se estrella contra el suelo. Los fragmentos de vidrio y monedas antiguas desbordan por todas partes. \"Estúpidos peniques\". Murmura Jenny. \"¡No sabes que estoy tratando de estar en silencio!\" Pero cuando ella se da la vuelta para buscar en otros lugares, se encuentra cara a cara con un zombi; gruñe empujando un aire frio, fétido, desde la boca de la criatura. Sin embargo, para sorpresa de Jenny el zombi no ataca, y en su único ojo sano, ella cree ver algo parecido a la bondad. Detrás del zombi, más cadáveres se mezclan en la habitación. \"Ah, tios, no sois del todo malos\" dice. \"Vamos. Sé de algunas personas que van a querer conoceros.\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Coloca a Jenny en la colonia. Coloca 8 Zombis en la colonia."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Mirando a través de la mira del rifle, él ve a Jenny caminando lentamente por la carretera, y un grupo de muertos a cuestas. \"Oh Dios\", murmura, deslizando un dedo sobre el gatillo. \"Esa boba debe haber logrado morderse a si misma.\" Mata a Jenny Clarck."
+        }
+      ],
+      "audio_file": "audio/jenny-clark.mp3"
+    },
+    {
+      "id": "04-1",
+      "sheet": 4,
+      "card": 1,
+      "title": "SPARKY",
+      "trigger": "Si el jugador controla a Sparky y él no es un exiliado:",
+      "description": "\"¡Ahí estás Sparks! Eres un buen chico, ¿no es así?\" Sparky ladra con excitación y gira sobre si en un círculo. \"Gracias por listarme de nuevo, camarada. Ojalá pudiera ir contigo, pero no puedo soportar a esos idiotas de tu colonia. Ellos no piensan en grande, ¿sabes? Pero mira chico. He improvisado algo para ayudar a protegerte. He conectado este arma a uno de los equipos de la polea que utilizamos en el espectáculo para que parezca como si estuvieras volando. Te engancharé en el dispositivo... así. Ahora, si tiras un poco con tu boca - BANG! - máquina automática de matar zombies. ¡Ahora pareces un frío asesino de piedra!",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Mata 8 Zombis en la colonia. No hagas la tirada de Riesgo."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Mira a todos, Sparky, ¡el Perro Truco tiene un arma ahora! Sube 1 punto la Moral."
+        }
+      ],
+      "audio_file": "audio/sparky.mp3"
+    },
+    {
+      "id": "04-2",
+      "sheet": 4,
+      "card": 2,
+      "title": "DINAMITA",
+      "trigger": "Si tanto Edward White como John Price están en juego:",
+      "description": "\"Oh, sí, señor White. Eso es una gran idea. ¿Qué tal si condimentamos a esa zorra con un poco de chile en polvo?\" \"John, ¿podrías dominar tu estupidez un momento? Esto es química y la química requiere precisión. No se puede ir tirando ingredientes al azar de cualquier manera en la mezcla, sobre todo cuando no ayudan nada. Ahora cállate y pásame esa cubeta\". La siguiente elección pertenece al jugador que controla a Edward White.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"¡Dinamita! Diablos sí, perra! Tira un dado. Si sacas un 1 mueren Edward White y John Price. Si sacas un 2 o más, lanza otro dado y elimina esa cantidad de Zombis de la colonia. Entonces reemplazalos con Barricadas creadas a partir de los escombros."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"¡Ahhh, esto sí que es una bebida explosiva!\" Edward exclama mientras toma un sorbo de su primera cerveza casera. Cuando haya una tirada de dados de Acción el próximo turno, cada jugador tira 1 dado menos. Subes 1 punto la Moral."
+        }
+      ],
+      "audio_file": "audio/dinamita.mp3"
+    },
+    {
+      "id": "04-3",
+      "sheet": 4,
+      "card": 3,
+      "title": "GABRIEL DIAZ",
+      "trigger": "Si el jugador controla a un Superviviente no exiliado en una localización fuera de la colonia y Gabriel Díaz se encuentra en el mazo de Superviviente:",
+      "description": "Una explosión balancea el edificio mientras te encoges de miedo en un cuarto trasero. Densas nubes de humo negro entran y, tan pronto tus ojos se inundan de lágrimas, comienzas a toser. Prendiste fuego para distraer a la horda que tenía atrapado, pero las cosas rápidamente se escaparon de tu control. La única ventana que encuentras para escapar resulta ser demasiado pequeña, y ahora no hay nada que hacer, sino esperar a que el humo te asfixie. Lo último que ves antes de perder el conocimiento, es una forma dando tumbos hacia ti a través de las llamas. Despiertas en los brazos de un extraño. \"Menos mal que yo y mi familia pasabamos por aquí\", dice.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Agradecido, les hablas a tu rescatador y su familia acerca de la colonia. Busca en el mazo de Superviviente a Gabriel Díaz y agregalo a tus Seguidores. Añade 3 fichas de Superviviente Indefensos a la colonia."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Tan agradecido como eres, sabes que la colonia no puede permitirse el lujo de alimentar más bocas. Le das a la familia Díaz una recompensa antes de separar vuestros caminos. Elimina del juego 1 carta de tu mano."
+        }
+      ],
+      "audio_file": "audio/gabriel-diaz.mp3"
+    },
+    {
+      "id": "04-4",
+      "sheet": 4,
+      "card": 4,
+      "title": "JAMES MEYERS",
+      "trigger": "Si el jugador controla a James y él no está exiliado:",
+      "description": "\"No puedo dejar de pensar que mis habilidades en particular son más útiles que nunca. ¿Quién va a ayudar a mantener a nuestros líderes a no sucumbir bajo el estrés ¿Quién más puede identificar los problemas psicológicos que podrían afectar a la moral de la colonia?\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "James revisa los suministros sanitarios que entran en la colonia. Mira la mano de cada jugador. Puedes eliminar 3 cartas de Medicina de entre ellos para subir 1 punto la Moral. \"Lo siento, pero tengo que racionarlos para los casos más importantes.\""
+        },
+        {
+          "label": "OPCION 2",
+          "text": "James tiene una gran comprensión de las motivaciones de las personas que han sobrevivido a una gran crisis. Mira un Objetivo Secreto de cualquier jugador. Puede elegir decirselo al grupo."
+        }
+      ],
+      "audio_file": "audio/james-meyers.mp3"
+    },
+    {
+      "id": "04-5",
+      "sheet": 4,
+      "card": 5,
+      "title": "BEV RUSSELL",
+      "trigger": "Si el jugador controla a Bev:",
+      "description": "Sitúa a Bev en la escuela, si es posible (no cuenta como un movimiento). Una vez más, ella se encuentra de vuelta en la escuela, el último lugar en el que vió a su hijo. Los otros han mencionado ver niños salvajes aquí, y Bev está decidido a ... espera. ¿Qué fue eso? Desde fuera de la oscuridad ella ve una cara familiar, un dibujo enmarañado de venas inflamadas sobresaliendo bajo la piel de lo que una vez fue una hermosa cara. \"No\", lloriquea. \"Mi chico.\" \"¡Mami!\" él llora, mientras sale corriendo de su escondite. Pero él se detiene de pronto, tosiendo una bilis negra sobre el barato suelo laminado.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Los defensores del miedo en la colonia los asesinarían. Por Dios, son sólo niños. ¿Es culpa de ellos que estén infectados? Retira del juego, la carta de Superviviente de Bev. Bev no puede ser atacado, asesinado o alejado de la Escuela. Para el resto del juego cada vez que un Superviviente se mueva a la Escuela, ese Superviviente recibe 1 Herida (mientras Bev defiende a los niños)."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "El calor del infierno irradia contra la espalda de Bev mientras camina lejos de la escuela, una lágrima rueda por su mejilla. \"Descansa en paz, mi amor.\" Retira todo Objetos, Cartas y Zombis de la Escuela."
+        }
+      ],
+      "audio_file": "audio/bev-russell.mp3"
+    },
+    {
+      "id": "04-6",
+      "sheet": 4,
+      "card": 6,
+      "title": "CISTERNA DE COMBUSTIBLE",
+      "trigger": "Si el jugador mueve a un superviviente no exiliado:",
+      "description": "\"Mierda.\" El camión cisterna se encuentra junto a la carretera, y parece en condiciones excelentes. Sales de tu coche, y comprobando el perímetro te acercas a la cabina. La puerta del lado del conductor está entreabierta. Cortas el cinturón de seguridad y apaleas la cabeza del zombi conductor. El sombrero sangriento del camionero tiene las palabras \"Beaver Inspector\" y te sorprendes de lo estúpida y frívola que tu especie solía ser. Escalando al interior de la cabina, le das a las llaves un giro, y el motor diesel ruge alto para renacer en el mundo como un monstruo antiguo. Está nervioso. Ruidos como esto, atraerán a cada cosa muerta a lo largo de una milla.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Conduces el camión cisterna a la colonia, atrayendo a cada Zombi de la zona tras de ti. Coloca 6 Zombis en la colonia y añade a tu mano hasta 4 cartas de Combustible que hayan sido eliminadas del juego."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Suspiras con pesar y apagas el motor. El ruido es demasiado fuerte como para correr el riesgo de conducirlo a la colonia. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/cisterna-de-combustible.mp3"
+    },
+    {
+      "id": "04-7",
+      "sheet": 4,
+      "card": 7,
+      "title": "ANNALEIGH CHAN",
+      "trigger": "Si el jugador controla a Annaleigh Chan y ella no esta exiliada:",
+      "description": "\"Terrence Washington. Él fue el único caso que he perdido. La fiscalía tenía una mierda de evidencias, y yo estaba segura de que tenía el caso cerrado. Pero fue en una zona rural y todo el jurado podía ver era el color de la piel del niño. No tenía sentido para mí. Un chico de diecisiete años de edad, estaba en el lugar equivocado en el momento equivocado, y que simplemente, un poco de mala suerte le propició quince años de tiempos duros. Así que no estoy de acuerdo con tu declaración anterior. El mundo no se había ido al infierno debido a los zombies - se fue al infierno mucho tiempo antes. Nuestra especie no se merece algo mejor que esto.\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"Eres libre, Terrence. Lo lamento, no podría haberte dado esto cuando estabas vivo.\" Annaleigh abre las puertas de la prisión. Añade 1 Zombi a cada Localización fuera de la colonia."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Incluso si escapamos de todo esto, incluso si nuestra especie es capaz de reconstruirse, todo lo que nosotros haremos será perjudicarnos unos a otros. He terminado.\" Annaleigh se pega un tiro. Mata a Anna Leigh."
+        }
+      ],
+      "audio_file": "audio/annaleigh-chan.mp3"
+    },
+    {
+      "id": "04-8",
+      "sheet": 4,
+      "card": 8,
+      "title": "DAVID GARCIA",
+      "trigger": "Si el jugador tiene a David García y él no es un exiliado:",
+      "description": "Sitúa a David en la colonia (no cuenta como un movimiento). \"Mi inventario diario de reservas muestra que algo va mal. Alguien en la colonia ha estado robando en secreto suministros. Por otra parte, en base a los suministros robados, no creo que estén ocultando los suministros, sino planeando la caída de la colonia.\" El jugador actual mira 1 carta al azar de la mano de cada jugador que controla un Superviviente en la colonia.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"Es justo lo que esperaba. ¡El culpable está aquí!\" Acusa a otro jugador de la colonia de robo, e inicia una votación para exiliarlo."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Oops, lo siento, parece que cometí un error de cálculo. Normalmente no soy propenso a este tipo de errores. Lo lamento de verdad.\" No pasa nada."
+        }
+      ],
+      "audio_file": "audio/david-garcia.mp3"
+    },
+    {
+      "id": "04-9",
+      "sheet": 4,
+      "card": 9,
+      "title": "EL SUSTITUTO",
+      "trigger": "Si el jugador controla un superviviente no exiliado que está en una localización fuera de la colonia:",
+      "description": "Un golpecito en el cristal llama tu atención, y estás sorprendido al ver afuera a cuatro agentes uniformados de pie. Uno toca la punta de su sombrero hacia ti. Comienzas a deshacer la simple barricada colocada en la puerta, pero la puerta es abierta a patadas, y los cuatro hombres se lanzan al suelo. Un arma es colocada en tu cabeza. \"Escucha cuidadosamente.\" Dice el líder. \"Hemos visto a tu gente por la ciudad. Está bien. Tengo una llave aquí del almacén de armas de la comisaría. Te daremos esto a ti, pero tienes que prometer que tu gente mantendrá la zona despejada para nosotros. ¿Crees que puedes hacer eso?",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Revela las 8 primeras cartas del mazo de Comisaría. Añade cualquier Arma de las cartas reveladas a tu mano. Baraja el resto de cartas en el mazo. Añade la siguiente condición de Victoria para el Objetivo Principal actual, además de las condiciones de Victoria ya mencionadas: No hay Zombie en la Gasolinera, el Hospital y la Comisaría."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Guardad vuestras armas.\" No pasa nada."
+        }
+      ],
+      "audio_file": "audio/el-sustituto.mp3"
+    },
+    {
+      "id": "05-1",
+      "sheet": 5,
+      "card": 1,
+      "title": "BRANDON KANE",
+      "trigger": "Si Brandon está en juego y no está exiliado:",
+      "description": "Sitúa a Brandon en el Supermercado, si puedes (no cuenta como un movimiento). Sacudes tu cabeza sobre el cuerpo del ciervo que dejas deslizar del mostrador al suelo. Tendrás que blanquear el suelo. Brandon es el responsable de la limpieza, pero él está en un viaje al supermercado, y no planeas dejar la sangre del ciervo por todas partes durante horas. Realmente está oscuro en su habitación. ¿Pintó el sobre las ventanas? Enciendes tu linterna, ves los estantes con los productos de limpieza ... y los tarros de cristal. Santo Dios, ¿qué está haciendo el aquí? Iluminas con la luz los tarros de cristal y retrocedes ante lo que ves - recortes de uñas, productos higiénicos usados, y el pelo - oh Dios. El pelo. Nada de eso es de Brandon.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Te quejas a Brandon y le obligas a tirarlo todo. Coloca 1 Herida en Brandon y sitúalo en la colonia (no cuenta como un movimiento)."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Pon los últimos 10 no-Supervivientes y las cartas de no-Evento que se han eliminado de la partida en el Vertedero."
+        }
+      ],
+      "audio_file": "audio/brandon-kane.mp3"
+    },
+    {
+      "id": "05-2",
+      "sheet": 5,
+      "card": 2,
+      "title": "MOTIN",
+      "trigger": "Si el jugador controla a un Superviviente en la colonia y hay más Supervivientes Indefensos en la colonia que Supervivientes no Indefensos:",
+      "description": "\"¡No les importa que nos estamos muriendo de hambre! Puedo sentir mis costillas, pero esa puerta de la despensa está cerrada a cal y canto. ¿Por qué? Necesitamos comida. Bueno, no me importa lo que digan esas bolsas de escoria - Nosotros somos más que ellos. Yo digo que tiremos esa puerta abajo, y si alguno de ellos se interpone en nuestro camino, bueno ... es su elección si las cosas se ponen feas.\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Retira todos los Alimentos de la reserva."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Cada Superviviente no Indefenso en la colonia recibe 1 Herida."
+        },
+        {
+          "label": "OPCION 3",
+          "text": "Das ejemplo con uno de los amotinados. Mata a un Superviviente Indefenso."
+        }
+      ],
+      "audio_file": "audio/motin.mp3"
+    },
+    {
+      "id": "05-3",
+      "sheet": 5,
+      "card": 3,
+      "title": "EL ESTADO DEL SOL",
+      "trigger": "Si el jugador controla a un Superviviente en la colonia, y hay 2 o más Supervivientes Indefensos en la colonia:",
+      "description": "El sol brilla intensamente, y se refleja en la playa, de arena blanca perfecta y el agua azul clara. \"El Estado del Sol\", dice Harold, sacudiendo la postal en tu cara. \"Ahí es donde nos dirigimos. ¿Por qué deberíamos estar luchando contra el mal tiempo y los muertos? Creo que las aves están en lo cierto. Mi esposa y yo iremos volando al sur.\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"Gran idea como siempre, Harold.\" Abres las puertas al anciano y su esposa. Retira del juego 2 fichas de Supervivientes Indefensos de la colonia. A la mañana siguiente, los encuentras de nuevo en las puertas, mirando con avidez a los vivos. Bajas 1 punto la Moral."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"¿Con quién pelea Harold? No es ninguno de vosotros. Así que perdonanos y muere, o deja de ser un desagradecido y cierra la boca.\" Él se va, pero entiendes que se avergüenza por depender de los demás. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/el-estado-del-sol.mp3"
+    },
+    {
+      "id": "05-4",
+      "sheet": 5,
+      "card": 4,
+      "title": "ESTROPEADO",
+      "trigger": "Si el jugador gasta un alimento, después de quitar alimentos de la Reserva, pero antes de incrementar el resultado de los dados de acción:",
+      "description": "Miras fijamente la lata de estofado, y aguardando desesperadamente no estás viendo lo que crees que ves. ¿Está la lata hinchada o sólo deformada por haberse caído? No estás en una carrera para padecer botulismo, pero la comida no es exactamente abundante por aquí.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Sacudes la cabeza. \"Estoy seguro de que está bien. Tengo que dejar de ser tan paranoico.\" Elige un Superviviente que tú controles y coloca una Herida en él. Procede a aumentar el resultado de los dados de Acción."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Es mejor perder algunos kilos de hambre que perderlo todo por una enfermedad. Lanzas la lata lejos. No aumentas tu resultado de los dados de Acción. El Alimento se sigue utilizando."
+        }
+      ],
+      "audio_file": "audio/estropeado.mp3"
+    },
+    {
+      "id": "05-5",
+      "sheet": 5,
+      "card": 5,
+      "title": "SOPHIE ROBINSON",
+      "trigger": "Si el jugador mueve un Superviviente y Sophie se encuentra actualmente en el mazo de Superviviente:",
+      "description": "Corres después de que el humo del helicóptero se arremolina a medida que gira a través del cielo. Se desvanece de la vista detrás de una pared de altísimos árboles, y la tierra tiembla por el impacto. Atravesando los árboles, ves fuego y humo saliendo de la cabina, pero también ves los brazos de la piloto agitándose violentamente. Mientras te acercas, ves que todavía está viva, pero sus piernas están atrapadas. \"¡Ayúdame!\" Grita ella.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Arrastras a la piloto de su asiento y la alejas de los restos del helicóptero. La detonación de una explosión os golpea a ambos en el suelo mientras el fuego alcanza el depósito de combustible. Busca en el mazo de Superviviente a Sophie Robinson y añadela a tus Seguidores. Coloca 2 fichas de Herida en su carta."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Tus ojos se encuentran con la piloto, pero rápidamente comienzas a buscar los suministros. \"¡Monstruo!\" Grita mientras agarras lo que parece valioso y claramente lejos de los restos. Elije un Objeto del mazo. Busca en el mazo de Superviviente a Sophie Robinson y elimínala del juego."
+        }
+      ],
+      "audio_file": "audio/sophie-robinson.mp3"
+    },
+    {
+      "id": "05-6",
+      "sheet": 5,
+      "card": 6,
+      "title": "FOLLETO",
+      "trigger": "Si el jugador controla a un Superviviente en la colonia:",
+      "description": "Los fuertes vientos de la noche arrojaron una extraña sorpresa cuando salió el sol. Folletos impresos en papel de color naranja brillante cubrían el suelo, y muchos más estaban agolpados en los árboles circundantes, revoloteando allí como aves moribundas. NO VIENE AYUDA se leía en el encabezado, por lo que el resto del folleto carecía de interes. Una última acción del gobierno, que sirve a la vez como una advertencia y un catálogo de sus intentos fallidos en la lucha contra los muertos. NO VIENE AYUDA. Bienvenido al nuevo orden mundial.",
+      "options": [
+        {
+          "label": "OPCION UNICA",
+          "text": "\"Esto no tiene que quebrarnos. Era una ingenuidad, siempre hemos pensado que la ayuda estaba en camino. Podemos rendirnos y morir, o podemos refugiarnos para un plazo mas largo y sobrevivir.\" Al final de la siguiente ronda, si no hay al menos 1 Barricada en cada Localización, pierdes 1 punto de Moral. Si hay dos o más Barricadas en cada Localización, subes 1 punto la Moral."
+        }
+      ],
+      "audio_file": "audio/folleto.mp3"
+    },
+    {
+      "id": "05-7",
+      "sheet": 5,
+      "card": 7,
+      "title": "CAZADO",
+      "trigger": "Si el jugador controla un Superviviente que recibe una Herida normal como resultado de la tirada de Riesgo después del movimiento:",
+      "description": "\"¡Me dispararon! y no fue un accidente. ¡Los vi! Todos ellos ivan vestidos de camuflaje y no tenían interés en los zombis de la zona. Querían cazarme y ya te digo yo que no se veían tan desesperados como nosotros. Parecían bien alimentados. ¡Tenemos caníbales armados en el vecindario!\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Cazas a los cazadores. Haz dos tiradas de Riesgo por cada Superviviente que controles."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Durante el resto de la partida, siempre que un jugador mueva a un Superviviente, además de hacer una tirada de Riesgo, deberá tirar 1 dado. Si el resultado es 2 o menos, debe colocar 1 ficha de Herida normal en el Superviviente."
+        }
+      ],
+      "audio_file": "audio/cazado.mp3"
+    },
+    {
+      "id": "05-8",
+      "sheet": 5,
+      "card": 8,
+      "title": "EJERCITO",
+      "trigger": "Si el jugador controla un Superviviente que está en la colonia:",
+      "description": "Los soldados en uniforme de ejército realizan demandas predecibles: tener la comida lista a su regreso, o la colonia será incendiada. Todo jugador con 1 o más Supervivientes en la colonia debe votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Añade la siguiente condición de Victoria al Objetivo Principal actual: Tener 5 Alimentos en la reserva."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "Tu emboscada es sorprendentemente eficaz, y sus pérdidas son peores que las tuyas. Los cobardes huyen de una manera desorganizada. Tira un dado por cada Superviviente de la colonia. Por cada resultado de 3 o inferior, ese Superviviente recibe una Herida."
+        },
+        {
+          "label": "ALTERNATIVA",
+          "text": "Si Thomas Hearth está en la colonia, él se da cuenta de que el hombre que se hace llamar Coronel tiene un uniforme de sargento. Él revela su mentira en la puerta, y los impostores se retiran enfurecidos. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/ejercito.mp3"
+    },
+    {
+      "id": "05-9",
+      "sheet": 5,
+      "card": 9,
+      "title": "INDEFENSOS",
+      "trigger": "Si el jugador controla un superviviente que está en la colonia:",
+      "description": "\"No pretendo ser el único que está pensando en esto. Lo tenemos todo. Lo he visto en vuestros rostros. Estas personas están consumiendo todos nuestros recursos, pero no contribuyen en nada. No pretendo ser cruel, simplemente sobrevivir.\" \"No puedo creer que aún estes hablando de ello. Ya sabes, sería un asesinato dejar estas personas a los muertos. ¿Merece la pena la supervivencia para sacrificar nuestra propia humanidad? ¿Somos mejores que los monstruos de los que nos escondemos?\" Todos los jugadores con 1 o más Supervivientes en la colonia deben votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Elimina del juego todas las fichas de Supervivientes Indefensos de la colonia. Pierdes 1 ficha de Moral por cada 2 Supervivientes Indefensos eliminados (redondeando hacia arriba)."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "No pasa nada."
+        }
+      ],
+      "audio_file": "audio/indefensos.mp3"
+    },
+    {
+      "id": "06-1",
+      "sheet": 6,
+      "card": 1,
+      "title": "ASHLEY ROSS",
+      "trigger": "Si el jugador controla a Ashley Ross, y ella no es una exiliada:",
+      "description": "Inspecciona la infraestructura de la colonia y decides que, con algunas materias primas y esfuerzo, es probable que puedas hacer mejoras significativas. Se reúnen los Supervivientes, y asientas la base de tus planes.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Construye una serie de pasarelas alrededor de todo el perímetro; al atacar los zombis en la entrada 1, no hagas la tirada de Riesgo. Haz dos tiradas de Riesgo sobre Ashley Ross cuando construya esta mejora."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Amplías la zona de almacenamiento de residuos. Durante la fase de Limpieza del Vertedero bajas 1 punto la Moral por cada 15 cartas en el Vertedero en lugar de 1 punto de Moral por cada 10. Haz la tirada de Riesgo sobre Ashley Ross cuando construya esta mejora."
+        },
+        {
+          "label": "OPCION 3",
+          "text": "No haces nada. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/ashley-ross.mp3"
+    },
+    {
+      "id": "06-2",
+      "sheet": 6,
+      "card": 2,
+      "title": "APUESTAS",
+      "trigger": "Si el jugador controla un superviviente que está en la colonia:",
+      "description": "\"Estoy aburrido. Vamos, dejemos rodar algunos dados. Seguramente todo el mundo aquí tiene algo que pueda apostar. Apuesto un par de calcetines limpios que os voy a dejar sin blanca.\" Todos los jugadores con 1 o más Supervivientes en la colonia deben votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Uno a uno, empezando por el primer jugador, cada jugador puede colocar 1 carta de Objeto de su mano en el centro de la zona de juego por cada Superviviente controlado en la colonia. Por cada carta jugada ese jugador tira 1 dado. El jugador que sacó el resultado más alto, toma todas las cartas colocadas en el centro de la zona de juego y las añade a su mano. Si hay un empate se vuelven a lanzar los dados."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "No pasa nada."
+        }
+      ],
+      "audio_file": "audio/apuestas.mp3"
+    },
+    {
+      "id": "06-3",
+      "sheet": 6,
+      "card": 3,
+      "title": "FRIA NOCHE AMARGA",
+      "trigger": "Si el jugador recibe una Herida por congelación como resultado de una tirada de Riesgo después de moverse a una Localización con 1 o más supervivientes:",
+      "description": "La noche trae consigo una nueva percepción del frío. La nieve paró de caer, pero el viento se levantó, y tus extremidades todas doloridas por el aire gélido que te apuñala. Subes los peldaños hasta la puerta y la golpeas tan fuerte como puedes, gritando para que alguien te deje entrar. Pero el viento aúlla más fuerte, y tu sombrero es arrancado de la cabeza. Golpeas la puerta de nuevo, y el pánico te sobrecoge cuando al instante, el viento helado comienza a masticar en tus oídos. Cada jugador con 1 o más Supervivientes en la Localización a la que fue movido debe votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Se abre la puerta, pero el viento entra contigo, enviando objetos sueltos por el suelo. Cada Superviviente en la localización recibe 1 Herida por congelación."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "La puerta permanece bien cerrada. El Superviviente movido es asesinado."
+        }
+      ],
+      "audio_file": "audio/fria-noche-amarga.mp3"
+    },
+    {
+      "id": "06-4",
+      "sheet": 6,
+      "card": 4,
+      "title": "SIN MUNICION",
+      "trigger": "Si el jugador utiliza la habilidad de una carta de objeto de arma después de resolver esa habilidad:",
+      "description": "\"Todo bien, bicho raro\", gruñes al zombi cuya cabeza acabas de volar. \"¿De dónde sale todo eso?\". Buscas en el cinturón por otro cargador, pero recuerdas que acabas de gastar el último. \"Oh no\", te dices a ti mismo. Mirando sobre los pedazos sangrientos del zombi, desearías haber mostrado un poco de moderación.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Coloca el arma utilizada en el Vertedero."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Caza para obtener más munición. Mueve todos los dados de Acción de tu reserva de dados de Acción Disponibles a tu reserva de dados de Acción Gastados."
+        }
+      ],
+      "audio_file": "audio/sin-municion.mp3"
+    },
+    {
+      "id": "06-5",
+      "sheet": 6,
+      "card": 5,
+      "title": "SEÑAL DE RADIO",
+      "trigger": "Si un Superviviente que el jugador controla está en la colonia:",
+      "description": "\"Échale un vistazo. Encontré este viejo walkie-talkie. Realmente está en mal estado, pero por ahora parece estar recibiendo una señal. Creo que procede de un lugar cercano. No puedo recoger la mayor parte de lo que están diciendo, pero imagino que alguien necesita nuestra ayuda.\" Cada jugador con 1 o más Supervivientes de la colonia debe votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Los jugadores pueden mover conjuntamente 3 dados de Acción de su reserva de dados de Acción Disponibles a su reserva de dados de Acción Gastados. Si lo hacen, añaden una ficha de Superviviente Indefenso a la colonia y suben 1 punto la Moral. Si no lo hacen, no añaden una ficha de Superviviente a la colonia y pierden 1 punto de Moral."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "Pierdes 1 punto de Moral."
+        }
+      ],
+      "audio_file": "audio/senal-de-radio.mp3"
+    },
+    {
+      "id": "06-6",
+      "sheet": 6,
+      "card": 6,
+      "title": "FARO",
+      "trigger": "Si el jugador controla un superviviente que se encuentra en la colonia:",
+      "description": "\"¿Recordais como el fuego atrajo a todos los zombis la última semana? Bien, el otro día, estaba mirando el faro y tuve una idea. ¿Y si incendiamos esa cosa para atraer a los muertos? El faro no ha sido utilizado en décadas, pero encendían su luz, de vez en cuando, para las ocasiones especiales, así que no creo que pueda estar en mal estado.\"",
+      "options": [
+        {
+          "label": "OPCION UNICA",
+          "text": "Puedes mover 1 dado de Acción de tu reserva de dados de Acción Disponibles a tu reserva de dados de Acción Gastados para eliminar 1 Zombi de cada Localización. Si no lo haces, no pasa nada."
+        }
+      ],
+      "audio_file": "audio/faro.mp3"
+    },
+    {
+      "id": "06-7",
+      "sheet": 6,
+      "card": 7,
+      "title": "SACRAMENTO",
+      "trigger": "Si el jugador mueve un Superviviente no exiliado:",
+      "description": "Caminas más allá de la catedral, y te das cuenta que nadie ha estado dentro desde que se formó la colonia. Ciertamente, no es el destino mas tentador ... pero puedes pensar en algo que pudiera ser de utilidad.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Subes los escalones y la puerta principal cruje en cuanto la abres. Te pasas quince minutos buscando antes de encontrar un cuarto pequeño que sostiene el premio que querías - media docena de botellas de vino de Comunión. Pero a medida que te mueves a través de los oscuros pasillos hacia la salida, una forma maloliente choca contra ti. El cadáver del sacerdote rechina sus dientes, y casi consigue arrancarte la nariz. \"Parece que fuiste juzgado y no has estado a la altura.\" Golpeas su cabeza contra las baldosas del suelo en varias ocasiones hasta que sólo quedan restos sangrientos. Te sacudes el polvo y te preguntas ¿Acabo de hacer un chiste fácil en una pelea? ¡Es una grosería! Haz dos tiradas de Riesgo con el Superviviente movido. Si el Superviviente no muere por la tirada de Riesgo, subes 1 punto la Moral."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "No merece la pena el riesgo, y te mantienes en movimiento. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/sacramento.mp3"
+    },
+    {
+      "id": "06-8",
+      "sheet": 6,
+      "card": 8,
+      "title": "FORASTEROS",
+      "trigger": "Si un jugador controla un Superviviente que está en la colonia:",
+      "description": "\"¡Necesito a todo el mundo en la puerta para ahora! Hay un camión detenido en las afueras, cargado de refugiados!\" Cada jugador con 1 o más Supervivientes en la colonia debe votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "\"No tenemos mucho, pero si tu gente está dispuesta a tirar de si misma podemos darles un hogar. Durante el invierno al menos. Tras eso, ireis por vuestra cuenta.\" Cada jugador roba 1 Superviviente del mazo de Superviviente y lo añade a sus Seguidores. Cada jugador añade además 1 Superviviente Indefenso a la colonia."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "\"Lo siento, pero no puedo admitir a más. Vais a tener que poneros en marcha.\" Sus rostros sugieren que han escuchado esas palabras muchas veces antes. Bajan la mirada resignados mientras el camión comienza a alejarse. Tres días más tarde encuentras el camión desplomado a un lado de la carretera. La gente se ha ido, pero la carretera está bañada en sangre. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/forasteros.mp3"
+    },
+    {
+      "id": "06-9",
+      "sheet": 6,
+      "card": 9,
+      "title": "EN CABEZA",
+      "trigger": "Si un jugador controla un Superviviente que realiza una búsqueda en la comisaría:",
+      "description": "Sabes mejor que nadie como un ir a la morgue, pero imaginas que es el último lugar en el que otros buscarían. Pero una vez que te encuentras a ti mismo escaleras abajo en la oscuridad, estás tan abrumado por el miedo de que sólo tienes suficiente fuerza de voluntad para buscar, ya sea en el refrigerador o en el tanque químico.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Abres el refrigerador y dejas escapar un grito estridente. Una cabeza cortada cobra vida, rechinando sus dientes hacia ti. Huyes aterrado, derribando estantes y Dios sabe qué más. Llena la Comisaría con fichas de Ruido."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Levantas la tapa del tanque químico y dejas escapar un grito estridente. ¡Se trata de una cabeza cortada! Huyes aterrado, derribando estantes y Dios sabe qué más. Llena la Comisaría con fichas de Ruido. ¡Maldita sea! ¿No odias en la vida cuando una elección resulta no ser una elección?"
+        }
+      ],
+      "audio_file": "audio/en-cabeza.mp3"
+    },
+    {
+      "id": "07-1",
+      "sheet": 7,
+      "card": 1,
+      "title": "DORMIR",
+      "trigger": "Si un jugador distinto al jugador que lee esta carta bosteza:",
+      "description": "Dios, estás cansado. La ansiedad te mantuvo dando vueltas la última noche, y ahora te sientes como si pasaras el día atravesando una espesa niebla. Consideras fingir hacerte el enfermo para que puedas volver pronto a la cama, y realmente no es una mala idea. Has estado tomando malas decisiones durante todo el día y realmente podría tener un largo descanso.",
+      "options": [
+        {
+          "label": "OPCION UNICA",
+          "text": "Hasta el final de esta ronda, al principio del turno de cada jugador, pueden elegir mover todos sus dados de Acción de su reserva de dados de Acción Disponibles a su reserva de dados de Acción Gastados para eliminar 1 Herida de cada Superviviente que ellos controlen."
+        }
+      ],
+      "audio_file": "audio/dormir.mp3"
+    },
+    {
+      "id": "07-2",
+      "sheet": 7,
+      "card": 2,
+      "title": "EL REY ARTICO",
+      "trigger": "Si el jugador realiza una búsqueda en la gasolinera:",
+      "description": "Los copos de nieve flotan, y los dedos comienzan a entumecerse en el frío gélido. La octava llave que pruebas funciona, y levantas la quejumbrosa puerta del garaje. Comienzas a maldecir el ruido, pero las palabras no van más allá de tus labios. Lo ves sentado allí como un ídolo antiguo. Las palabras OSO POLAR están blasonadas lo largo del lateral de la moto de nieve, y recuerdas felizmente la canción de TV no exenta de ironía. \"Cuando el invierno intenta atraparte allí, monta en un OSO POLAR\".",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Coloca esta carta en el Superviviente que realizó la Búsqueda. Cuando te muevas con este Superviviente no harás la tirada de Riesgo pero debes situar una ficha de Ruido en el origen y el destino. Si el origen o destino es la colonia, añade 1 Zombi a la colonia en su lugar. Cada vez que te muevas, coloca una ficha de Herida en esa moto de nieve. Cuando la moto de nieve cuenta con 4 Heridas retírala del juego."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Puedes extraer la gasolina del depósito. Busca, en el mazo de Objetos de la Gasolinera, 2 cartas de Combustible y añádelas a tu mano."
+        }
+      ],
+      "audio_file": "audio/el-rey-artico.mp3"
+    },
+    {
+      "id": "07-3",
+      "sheet": 7,
+      "card": 3,
+      "title": "THOMAS HEART",
+      "trigger": "Si el jugador usa la habilidad de una carta de objeto de arma mientras que Thomas Heart está en juego:",
+      "description": "Los disparos resuenan como campanas de iglesia que saludan a la mañana. Esto es lo de siempre, pero en algún lugar profundo en los dañados pliegues del cerebro de Thomas Heart, algo falla. Un vaso sanguíneo estalla en su ojo izquierdo y el destrozado hombre comienza a aullar de miedo, frustración y rabia. La siguiente elección pertenece al jugador que controla a Thomas Heart.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Thomas distribuye 4 Heridas a los Supervivientes que comparten su Localización. Si no hay otros Supervivientes compartiendo la Localización de Thomas, no pasa nada."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Los jugadores deben eliminar conjuntamente del juego, 2 cartas de Medicina de sus manos. Si no se eliminan 2 cartas de Medicina, lleva a cabo los efectos de la opción 1 en su lugar."
+        },
+        {
+          "label": "OPCION 3",
+          "text": "Mata a Thomas."
+        }
+      ],
+      "audio_file": "audio/thomas-heart.mp3"
+    },
+    {
+      "id": "07-4",
+      "sheet": 7,
+      "card": 4,
+      "title": "ROD MILLER",
+      "trigger": "Si Rod está en juego:",
+      "description": "Todo el mundo conoce los síntomas, pero a Rod le resulta extraño experimentarlos de primera mano. El dolor en su brazo izquierdo no es tan fuerte, como su congelación, e irradia desde los dedos hasta el interior de su pecho. \"Voy a estar bien\", jadea ante los demás antes de derrumbarse. El Fantasma de las Comidas Pasadas flota delante de sus ojos, e incluso mientras lucha por la vida, su cinismo imagina que es mejor morir por una \"Mac'n Cheese\" que por un zombi.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"Vi un desfibrilador en el hospital la última vez que estuvimos allí. Vamos a tener que llevarlo.\" Coloca 2 Supervivientes que tú controles y a Rod en el Hospital (no cuenta como un movimiento). Haz las tiradas de Riesgo para Rod y esos Supervivientes, dos veces a cada uno. Si no hay espacio suficiente en el Hospital para hacer esto, puedes colocar cualquier Superviviente actualmente en el Hospital de nuevo en la colonia (no cuenta como un movimiento)."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Mata a Rod."
+        }
+      ],
+      "audio_file": "audio/rod-miller.mp3"
+    },
+    {
+      "id": "07-5",
+      "sheet": 7,
+      "card": 5,
+      "title": "EDWARD WHITE",
+      "trigger": "Si el jugador controla a Edward White, y él no es un exiliado:",
+      "description": "La amenaza de un virus que reanima a los muertos puede parecer apremiante, pero sabes que la amenaza más grave en la colonia proviene de las simples cortes y rasguños que las personas podrían sufrir. Y así, en memoria de Alexander Fleming, decides probar su suerte con la creación de la penicilina.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Sacrificas un poco de pan para el cultivo de penicilina. Retira 1 ficha de Alimento de la reserva de la colonia y añade 1 carta de Medicina que ha sido eliminado del juego a tu mano. Puedes hacer esto todas las veces que quieras este turno."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "No vale la pena el riesgo estropear la reserva de Alimentos. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/edward-white.mp3"
+    },
+    {
+      "id": "07-6",
+      "sheet": 7,
+      "card": 6,
+      "title": "JOHN PRICE",
+      "trigger": "Si el jugador realiza una acción de búsqueda en la escuela, y John Price se encuentra en el mazo de Superviviente:",
+      "description": "Mientras busca a través de la escuela, oyes gritar y golpear una puerta en el pasillo. Al investigar, ves un adolescente frenéticamente golpeando la puerta de la cafetería. Comienzas a abrir la puerta, cuando observas la aparición de los muertos detrás él.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Abres la puerta y rescatas al niño. Él corre más allá de ti y deja que tú le hagas frente a los zombis. Añade a John Price a tus Seguidores. Añade 2 Zombis a la Escuela."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Tu vacilación da a los zombis el tiempo suficiente para llegar al muchacho. Decides tomar ventaja de la distracción y te precipitas en la cafetería, acaparando los suministros, mientras los gritos de angustia del adolescente se hacen eco en toda la escuela. Añade 2 Alimentos a la reserva. Busca en el mazo del Superviviente a John Price. Retira la carta del juego."
+        }
+      ],
+      "audio_file": "audio/john-price.mp3"
+    },
+    {
+      "id": "07-7",
+      "sheet": 7,
+      "card": 7,
+      "title": "DESCARGA DE SUMINISTROS",
+      "trigger": "Si el jugador controla un Superviviente que está en la colonia:",
+      "description": "Viviste cerca del aeropuerto cuando eras niño, y solías escalar a la azotea de tu casa para ver los aviones despegar. Cuando uno pasaba sobre tu cabeza, saludabas mientras el aire desplazado azotaba tu cuerpo. Al igual que ahora. ¿Espera ... qué? Despiertas con un sobresalto y caes de tu silla de jardín. Un avión inmenso, salido de una vieja película bélica, ruge sobre ti antes de arrojar lo que parece ser una caja. Un paracaídas color naranja se abre, llevando la caja a un lugar seguro y lejos de la colonia.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"Alguien sabe que estamos aquí. No es posible que sea casualidad. ¡Tenemos que encontrar esa caja!\" Elige a un Superviviente que controles y haz la tirada de Riesgo para ese Superviviente 3 veces. Si ellos no se mueren por ese Riesgo, añade 5 Alimentos a la reserva. \"El contenedor tenía impreso carácteres Chinos o algo así. No fue nuestro gobierno quie hizo la descarga, eso es seguro.\" Si Annaleigh Chan está en juego, es capaz de traducir el texto. \"El gobierno chino sigue intacto y está tratando de proporcionar ayuda. Sube 1 punto la Moral."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "No pasa nada."
+        }
+      ],
+      "audio_file": "audio/descarga-de-suministros.mp3"
+    },
+    {
+      "id": "07-8",
+      "sheet": 7,
+      "card": 8,
+      "title": "BROTE",
+      "trigger": "Si un jugador controla un superviviente que está en la colonia y hay 1 o más superviviente indefenso en la colonia:",
+      "description": "Al principio, Jerry sólo tenía una fiebre ligera, pero al día siguiente su cuello estaba hinchado y tenía un extraño tinte púrpura en él. Ahora, han pasado tres días y nunca he visto nada igual. Los bubones amarillos que se han formado bajo la mandíbula de Jerry están goteando pus, y el hedor que le rodea es áspero y amargo. Esto no puede acabar bien.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Expulsa al Superviviente Indefenso. Retira una ficha de Superviviente Indefenso. Pierdes 1 punto de Moral."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "La enfermedad se propaga a través de la colonia. Cada Superviviente en la colonia recibe 1 Herida. Si Olivia Brown o Janet Taylor no están en juego, haz una tirada de Riesgo por cada Superviviente Indefenso en la colonia. Con un resultado de 1, mata a ese Superviviente Indefenso."
+        }
+      ],
+      "audio_file": "audio/brote.mp3"
+    },
+    {
+      "id": "07-9",
+      "sheet": 7,
+      "card": 9,
+      "title": "OLIVIA BROWN",
+      "trigger": "Si Olivia está en juego:",
+      "description": "\"Déjame aclararte esto. Tú quieres poner en peligro a toda la colonia para que puedas investigar un zombi o algo así?\" Olivia suspira. \"No seas celoso,\" ella asiente. \"Pero sí, quiero estudiar uno de los no-muertos. Yo podría ser capaz de encontrar formas sencillas de protegernos del virus.\" Coloca a Olivia en la colonia (esto no cuenta como un movimiento). Todos los jugadores con 1 o más Supervivientes en la colonia deben votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Vincula esta carta a Olivia. Al comienzo de cada ronda, si Olivia está en la colonia, ella puede experimentar. Para experimentar, debes hacer una tirada de Riesgo para Olivia. Si sacas un resultado que no esté en blanco aplica su efecto a Olivia. Si sacas un espacio en blanco, cuando un jugador saca un resultado de mordedura en los dados de Riesgo durante esa ronda, cualquier jugador puede descartar inmediatamente una Medicina para ignorar los efectos de ese resultado de Mordedura."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "No pasa nada."
+        }
+      ],
+      "audio_file": "audio/olivia-brown.mp3"
+    },
+    {
+      "id": "08-1",
+      "sheet": 8,
+      "card": 1,
+      "title": "BUDDY DAVIS",
+      "trigger": "Si el jugador controla a Buddy Davis y Buddy comienza el turno en la colonia:",
+      "description": "\"¡Escucha a la gente! Es una situación de supervivencia, y nos corresponde estar en la mejor forma física posible. Si deseais tomad un momento para mirar mis brazos perfectamente esculpidos. Este tipo de genialidad, obviamente, no va a ser posible para todos. Son los brazos de un macho Alfa. Pero con un montón de trabajo duro y determinación, todos podríais empezar a ir un poco más como yo. Así que a partir de mañana antes del amanecer, llevaré a cabo una serie de intensos ejercicios. Espero veros a todos y cada uno de vosotros, trabajando vuestros culos fuera, por lo que podríamos vivir en una colonia repleta de ganadores\".",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "La colonia comienza un régimen de entrenamiento intenso que aumenta la productividad, pero aumenta también el consumo de alimentos. Para el resto del juego, cualquier jugador puede colocar una carta de Alimento de su mano en el Vertedero (sin efecto) al comienzo de una ronda, para tirar 1 dado de Acción extra durante la Fase de la tirada de los dados de Acción de esta ronda."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Alguien lanza una lata vacía a la cabeza de Buddy mientras está mostrando sus músculos abdominales. La risa estruendosa resultante eleva la Moral en 1."
+        }
+      ],
+      "audio_file": "audio/buddy-davis.mp3"
+    },
+    {
+      "id": "08-2",
+      "sheet": 8,
+      "card": 2,
+      "title": "MIKE CHO",
+      "trigger": "Si el jugador controla un superviviente en una localización fuera de la colonia, y hay al menos 1 zombi en esa localización, y Mike Cho se encuentra todavía en el mazo de superviviente:",
+      "description": "El zombi estrellándose a través de la ventana corta tu ruta final de escape. No hay salida. Tu inevitable muerte comienza a hundirte, y te encuentras sorprendido por la paz que sientes en ese momento. El muerto rechinando te oprime, y cierras tus ojos y susurras una oración final. Oyes un grito estridente y abres los ojos de nuevo para ver a un hombre vestido completamente de negro, atravesando al zombi con una espada.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Te unes a él, ayudándole a combatir contra los zombis. Agradecido por tu ayuda se compromete a unirse a tu grupo. Busca en el mazo de Superviviente a Mike Cho y añádelo a tus Seguidores. Añade 1 Herida a Mike Cho y al Superviviente que controlas que está en una Localización fuera de la colonia. Retira todos los Zombis de esa Localización."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Mientras él despacha a los Zombis, ves tu oportunidad de escapar. Retira todos los Zombis de esa Localización fuera de la colonia donde tienes un Superviviente."
+        }
+      ],
+      "audio_file": "audio/mike-cho.mp3"
+    },
+    {
+      "id": "08-3",
+      "sheet": 8,
+      "card": 3,
+      "title": "BRIBONES",
+      "trigger": "Si el jugador controla un superviviente que realiza una búsqueda en el hospital:",
+      "description": "El aire de la sala de almacen es frío, y en un primer momento tu alma se hunde - a un lado de una pila de palés de madera, la habitación está vacía. Ciertamente no es el tesoro de suministros médicos que estabas esperando. Pero entonces ... echas un vistazo al metal detrás de los palés, y caminas alrededor para examinarlo. Hay cuatro scooters Bribón. Un vistazo rápido muestra que todos están completamente cargados, pero un rápido viaje de placer por el pasillo del hospital te fuerza a admitir que los scooters son una basura. Ellos no podrían jamás escapar de un zombi. Hmm. ¿Tal vez los scooters pueden servir a otro tipo de propósito?",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "¡Si seguro! Podrías llevarlos a la colonia y tener carreras. El hecho de que los scooters son tan lentos haría todo ello un asunto cómico! Su corazonada resulta precisa, y las cuatro horas de carrera elevan la Moral en 1. Pero los fuertes aplausos también atraen a los muertos. Añade 5 Zombis a la colonia."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "¿Divertidísimo? Hombre, eso es exactamente el tipo de pensamiento estúpido que hace que todo el mundo me disguste. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/bribones.mp3"
+    },
+    {
+      "id": "08-4",
+      "sheet": 8,
+      "card": 4,
+      "title": "EL LIBRO DE LOS MUERTOS",
+      "trigger": "Si el jugador controla un superviviente no exiliado que realiza una búsqueda en la biblioteca:",
+      "description": "En lo profundo de los montones de la Colección Especial, descubres un voluminoso tomo encuadernado en cuero, cubierto de polvo. El título es EL LIBRO DE LOS MUERTOS.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Convencido de que has encontrado la clave para salvar a toda la humanidad, rápidamente escondes el libro en la mochila. A tu regreso a la colonia, reunes a todos juntos, y con orgullo revelas tu hallazgo. Para tu sorpresa, tu revelación es recogida con carcajadas. \"Amigo\", dice alguien. \"Esa es la biografía de una banda de rock.\" Tu idiotez proporciona una frivolidad necesaria. Sube 1 punto la Moral."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"¡Guau, pesa una tonelada!\" te dices a ti mismo. \"Apuesto a que podría hacer algún daño real.\" Alzas el libro a una ventana del 2º piso y cae sobre la cabeza de un zombi vestido como un mensajero en bicicleta. Su cabeza aplastada explota como un melón podrido. Más tarde al salir de la biblioteca, le echas el guante a la bolsa de correo del zombi muerto. Elimina 1 Zombi de la Biblioteca (si es posible) y añade 4 fichas de Alimentos a la reserva de la colonia."
+        }
+      ],
+      "audio_file": "audio/el-libro-de-los-muertos.mp3"
+    },
+    {
+      "id": "08-5",
+      "sheet": 8,
+      "card": 5,
+      "title": "LORETTA CLAY",
+      "trigger": "Si el jugador controla a Loretta y ella no es una exiliada:",
+      "description": "\"¿Dónde encontrarás estas latas?\" Loretta dice con enojo. \"Tengo casi treinta latas bien pasada su fecha de caducidad. Si vosotros los cazadores no haceis y vigilais vuestro tu trabajo, entonces esto es un caos. ¡Contábamos con esta comida!\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Loretta prepara la comida de todos modos. Tira un dado. Con un resultado de 5-6, la comida no sólo es buena, sino que Loretta hace un trabajo excepcional en la cocina. Subes 1 punto la Moral. Con un 3-4, la comida no es peor que de costumbre. No pasa nada. Con un 2-1, una intoxicación alimentaria asola a la colonia. Cada Superviviente no Indefenso de la colonia deben tirar un dado: 1 ó 2 es una Herida."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Ella maldice enojada y tira las latas fuera. Elimina 1 ficha de Alimento de la reserva."
+        }
+      ],
+      "audio_file": "audio/loretta-clay.mp3"
+    },
+    {
+      "id": "08-6",
+      "sheet": 8,
+      "card": 6,
+      "title": "ANDREW EVANS",
+      "trigger": "Si el jugador controla a Andrew Evans y él no es un exiliado:",
+      "description": "Sitúa a Andrew en el Supermercado (esto no cuenta como un movimiento). \"Los carroñeros han saqueado todas las opciones obvias de alimentos. No hay una sola lata de comida a la vista, pero lo bueno todavía puede estar esperando. Esos idiotas no se dan cuenta de lo valiosas que pueden llegar a ser las láminas de plástico y tuberías de PVC.\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Andrew construye un invernadero. Andrew Jones aumenta la habilidad: COLONIA: (1+) Una vez por ronda puede añadir 2 fichas de Alimentos a la reserva."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Ayuda a mejorar el aislamiento de la colonia. Subes 1 punto la Moral."
+        }
+      ],
+      "audio_file": "audio/andrew-evans.mp3"
+    },
+    {
+      "id": "08-7",
+      "sheet": 8,
+      "card": 7,
+      "title": "JANET TAYLOR",
+      "trigger": "Si el jugador controla a Janet y ella no está exiliada:",
+      "description": "\"Debemos estar más preocupados por el tratamiento de heridas menores. No sólo no sabemos casi nada acerca de la peste que hizo a los zombis, pero incluso cosas como pequeñas infecciones podrían ser problemáticas de tratar. Además, nadie quiere ser herido durante una situación de supervivencia. Puedo establecer una clínica, pero voy a necesitar a todos los demás para mantenerme bien abastecido.",
+      "options": [
+        {
+          "label": "OPCION UNICA",
+          "text": "Para el resto de la partida, si Janet está también en la colonia, durante el turno de un jugador, ese jugador puede colocar una carta de su mano en el Vertedero sin necesidad de utilizar su habilidad para eliminar 1 Herida de un Superviviente que ellos controlen en la colonia."
+        }
+      ],
+      "audio_file": "audio/janet-taylor.mp3"
+    },
+    {
+      "id": "08-8",
+      "sheet": 8,
+      "card": 8,
+      "title": "CARLA THOMPSON",
+      "trigger": "Si el jugador controla a Carla y ella no es una exiliada:",
+      "description": "Sitúa a Carla en la Comisaría (esto no cuenta como un movimiento). \"Este hombre era verdaderamente repulsivo, ¿no? Fue básicamente acechando a toda la ciudad. Había pasado por casi todos los medios de comunicación social que pudo, para tomar fotos, las cuales colgó en todas las habitaciones de su casa. El ahora es probablemente un no-muerto caníbal, lo cual probablemente no está demasiado lejos de quién era él cuando estaba vivo. El asunto es que su casa había estado cerrada durante la investigación, y apuesto a que todas esas fotos siguen ahí. Si pongo mis manos en ellas, probablemente podría dar a la gente de la colonia, fotos de sus seres queridos perdidos, y recuerdos agradables a que aferrarse.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Un detective reanimado vaga por la casa. Haz la tirada de Riesgo dos veces en Carla. Si ella no muere por el Riesgo, sube 1 punto la Moral."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "El detective muerto es demasiado, y Carla decide no correr el riesgo. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/carla-thompson.mp3"
+    },
+    {
+      "id": "08-9",
+      "sheet": 8,
+      "card": 9,
+      "title": "VIEJAS DIVISIONES",
+      "trigger": "Si el jugador controla un superviviente que está en la colonia:",
+      "description": "Puños y maldiciones vuelan a medida que con fuerzas tu paso entre la multitud para romper una fea pelea. \"¡Que está pasando aquí?\" exiges. \"Es él\", gruñe uno de los combatientes, señalando a su oponente. \"No sé por qué dejamos que su especie entrara aquí, para empezar. Este lugar es para gente buena!\" Tu corazón se hunde mientras otras voces se elevan en apoyo. \"Por si no lo has notado, el mundo tal como lo conocíamos acaba de terminar!\" gritas. \"Las viejas divisiones, no significan nada ahora. Sólo hay seres humanos y las cosas que se comen a los seres humanos.\". Los jugadores con 1 o más Supervivientes en la colonia deben votar. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "El fanático intolerante que comenzó la pelea es expulsado de la colonia. Elimina 1 Superviviente Indefenso. Durante un tiempo, la gente trabaja de forma más eficaz. Coloca la actual carta de Crisis en la parte inferior del mazo y omite el paso Resolver Crisis esta ronda, pero baja 1 punto la Moral mientras la gente se opone a una reacción tan severa."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "Se cuelga un aviso afirmando que la intolerancia será castigada con el exilio. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/viejas-divisiones.mp3"
+    },
+    {
+      "id": "09-1",
+      "sheet": 9,
+      "card": 1,
+      "title": "SUPERVIVIENTE ENLOQUECIDO",
+      "trigger": "Si el jugador controla un superviviente en una localización fuera de la colonia:",
+      "description": "La inmunda mujer te mira en un confuso silencio. Su pelo es un nido de ratas enredado, y la mugre cubre sus brazos, piernas y cara. \"Señorita, ¿está bien?\" preguntas. Una bolsa deplástico de \"Meat & Stuff\" cuelga a su lado, repleto de lo que parece ser comida enlatada. Ahora observas el cuchillo de carnicero en la otra mano. \"Señorita, yo no voy a hacerle daño. Mis amigos y yo tenemos un lugar seguro. ¿Quiere venir con nosotros?\" La mujer levanta el cuchillo y grita, \"¡Mantente alejado de él! Ese es mi dinero que he estado ahorrando.\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Ella te ataca antes de tener la oportunidad de hablar. Ella pelea con desenfreno y después de una lucha difícil, te ves obligado a matarla. Añade 3 fichas de Alimentos en la colonia y haz tiradas de Riesgo en un Superviviente que controles en una Localización fuera de la colonia."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "La mirada salvaje en sus ojos te asusta y escapas. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/superviviente-enloquecido.mp3"
+    },
+    {
+      "id": "09-2",
+      "sheet": 9,
+      "card": 2,
+      "title": "BIENVENIDO A CASA",
+      "trigger": "Si el jugador mueve un Superviviente:",
+      "description": "\"Oh Dios. Esta es la calle en la que tus padres vivían ¿Cómo ha cambiado el mundo que no la has reconocido? Y ahora no puedes parate, necesitas saberlo. Regresas de tu destino previsto, y de pronto se abre la puerta trasera de tu casa. El hedor que te asalta te advierte de lo que te espera, pero aún así entras. Encuentras a tu madre en el salón, boca abajo en el suelo. Su cabeza es un halo de sangre seca y el revolver Colt de tu padre a su lado. Ni siquiera tienes la oportunidad de llorar antes de que la cosa que fue tu padre venga arrastrándose por las escaleras.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Te inclinas hacia el arma y apuntas. Luchas por apretar el gatillo, tan pronto como está justo encima de ti, con sus manos escarbando a tus pies. \"Lo siento, papá.\" Haz la tirada de Riesgo en el Supervivientes movido. Si el Superviviente no muere por el Riesgo, adjunta esta carta al Superviviente. Una vez por ronda cuando este Superviviente realiza un Ataque no hagas la tirada de Riesgo."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Corres fuera de la casa y no miras hacia atrás. No había modo en el que tú podrías haberle disparado. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/bienvenido-a-casa.mp3"
+    },
+    {
+      "id": "09-3",
+      "sheet": 9,
+      "card": 3,
+      "title": "FOREST PLUM",
+      "trigger": "Si Forest está en juego:",
+      "description": "\"No pude evitar darme cuenta de que te anotaste un poco de whisky en tu última carrera\", dice Forest, y muestra lo que parece ser una sonrisa encantadora. Pero no lo es. No puedes soportar al tipo realmente. Él es pegajoso, huele y se niega a quitarse el estrecho traje de Papá Noel, lo cual es un poco preocupante. Pero también ha tenido una vida dura claramente y no puedes dejar de sentir cierta simpatía por él. Él, al menos, tiene buenas intenciones. \"Vamos hombre, muestra un poco de espíritu navideño.\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Le das a Forest alcohol. Más tarde esa noche, borracho, tropieza con el supermercado y ruidosamente suena una campana en frente de la entrada. Entra preguntando a nadie en particular si les gustaría donar algo a la caridad. Coloca a Forest en el Supermercado (esto no cuenta como un movimiento). Añade 4 fichas de Ruido al Supermercado."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Mueve ese espíritu de la Navidad hacia tu culo, Forest. Ese espíritu se queda conmigo.\" Más tarde esa noche, Forest golpea a otro superviviente en un ataque de rabia. El Superviviente con el valor más bajo de Influencia (sin incluir a Forest) recibe 1 Herida."
+        }
+      ],
+      "audio_file": "audio/forest-plum.mp3"
+    },
+    {
+      "id": "09-4",
+      "sheet": 9,
+      "card": 4,
+      "title": "DANIEL SMITH",
+      "trigger": "Si el jugador controla a Daniel y hay al menos 1 superviviente indefenso en la colonia:",
+      "description": "Uno de los Supervivientes Indefensos es encontrado asesinado, al parecer por una lata de comida, sin etiquetar. Elimina 1 Superviviente Indefenso del juego.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "El asesino pone a Daniel en modo detective, y él identifica al asesino a través de entrevistas y técnicas básicas de investigación. Gasta 1 dado de Acción Disponible. Elige un Superviviente y sitúalo en la Comisaría (esto no cuenta como un movimiento). Devuelve todas las cartas equipadas del Superviviente a la mano del jugador que lo controla. Este Superviviente no puede moverse, buscar, atacar o utilizar su habilidad durante el resto del juego."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "No hay ninguna ley y Daniel observa como la colonia sucumbe al pánico. Él no lo dice, pero realmente no le preocupa. Baja 1 punto la Moral."
+        }
+      ],
+      "audio_file": "audio/daniel-smith.mp3"
+    },
+    {
+      "id": "09-5",
+      "sheet": 9,
+      "card": 5,
+      "title": "AVIONETA",
+      "trigger": "Si el jugador mueve un superviviente y Sophie Robinson está en juego:",
+      "description": "\"Es un viejo fumigador\", dice Sophie, corriendo la mano por la cara. \"Está en perfecto estado. Yo podría volar esa cosa fuera de aquí y explorar en busca de ayuda. O suministros incluso. ¿Quién sabe? Puede ser que incluso encontremos un lugar más seguro para vivir.\" Todos los jugadores con 1 o más Supervivientes en la colonia deben votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Los jugadores pueden retirar conjuntamente del juego, 1 carta de Herramienta y 1 carta de Combustible, así como Sophie Robinson para subir 1 punto la Moral."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "No pasa nada."
+        }
+      ],
+      "audio_file": "audio/avioneta.mp3"
+    },
+    {
+      "id": "09-6",
+      "sheet": 9,
+      "card": 6,
+      "title": "NIÑA PERDIDA",
+      "trigger": "Si hay al menos un superviviente indefenso en la colonia:",
+      "description": "\"¡Oh, Dios mío, Cindy! Ella estaba aquí hace un momento ¿La has visto? Creo que ella estaba subiendo al viejo árbol cerca de la pared sur ¿Ella fue otra vez? ¿La vió alguien? Por favor, tenemos que buscarla. ¡Hemos de encontrar a mi niña!\" Todos los jugadores con 1 o más Supervivientes en la colonia debe votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Si cada Localización fuera de la colonia ha sido buscada desde ahora hasta el final de la próxima ronda subes 1 punto la Moral, de lo contrario bajarás 1 punto la Moral y eliminas un Superviviente Indefenso de la colonia."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "Bajas 1 punto la Moral y eliminas un Superviviente Indefenso de la colonia."
+        }
+      ],
+      "audio_file": "audio/nina-perdida.mp3"
+    },
+    {
+      "id": "09-7",
+      "sheet": 9,
+      "card": 7,
+      "title": "ABANDONADA",
+      "trigger": "Si el jugador limpia los residuos y hay al menos 1 superviviente indefenso en la colonia:",
+      "description": "Ahí está otra vez, el sonido de un bebé llorando. Accedes a la entrada trasera del almacén, siguiendo el sonido, y llegas al gran contenedor que almacena envases de plástico usados. Alguien ha tirado un recién nacido. Una rápida investigación rápida te hace encontrar una adolescente angustiada. Ante el temor de ser rechazada, ella escondió su embarazo de la colonia. Todos los jugadores con 1 o más Supervivientes en la colonia deben votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "Conservas el bebé. Añade ficha 1 de Indefenso a la colonia. El llanto del niño atrae a los muertos. Añade 5 Zombis a la colonia."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "Conservas el bebé, pero expulsas a la madre por lo que hizo. El llanto del niño atrae a los muertos. Añade 5 Zombis a la colonia. Buscas en la ciudad por la fórmula infantil. Cada jugador que sea capaz, debe mover 1 dado de Acción de su reserva de dados de Acción Disponibles a su reserva de dados de Acción Gastados."
+        }
+      ],
+      "audio_file": "audio/abandonada.mp3"
+    },
+    {
+      "id": "09-8",
+      "sheet": 9,
+      "card": 8,
+      "title": "HARMAN BROOKS",
+      "trigger": "Si Harman Brooks está en juego y no es un exiliado:",
+      "description": "\"No más palas de basura o construcción de barricadas.\" Tengo que salir y hacer lo que mejor que sé hacer.\"",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Harman está sobre la plataforma, y siente mecerse por el viento del invierno. Él mira hacia abajo desde su punto de vigilancia en las copas de los árboles, a la trampa especialmente diseñada, y se prepara para una larga espera. Añade 3 alimentos a la reserva."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Las espinas enganchan la manga de Harman mientras él empuja a través de una espesa maraña de vegetación. Después de largas horas está empezando a perder la esperanza, pero entonces ve a un prometedor brote en la base de un viejo roble. De Rodillas, arranca una hoja y mastica. ¡Perfecto! Ahora bien, si él sólo puede recolectar varias docenas más de plantas, podría ser capaz de hacer un bálsamo decente. Elimina 1 Herida de hasta 3 Supervivientes."
+        }
+      ],
+      "audio_file": "audio/harman-brooks.mp3"
+    },
+    {
+      "id": "09-9",
+      "sheet": 9,
+      "card": 9,
+      "title": "KODIAK COLBY",
+      "trigger": "Si el jugador realiza una búsqueda, y Kodiak Colby se encuentra en el mazo de supervivientes:",
+      "description": "Te estremeces de terror cuando el oso zombie avanza hacia ti, arrastrando sus intestinos a lo largo de la gravilla que deja tras de él. Acorralado en un callejón, te acurrucas contra un contenedor de basura y te preparas para encontrarte con la muerte. Pero entonces un grito audaz retumba desde lo alto, y ¡sorpresa!. Un poderoso campista salta desde un árbol cercano, y aterriza sobre el lomo del oso. La bestia exhala y deja escapar un gruñido rápidamente, pero el recién llegado lo mantiene apretado antes de aplicar una estrangulación feroz. Minutos más tarde, el oso yace decapitado en el suelo, y tu robusto salvador te echa una mano, antes de enseñarte cómo succionar el generoso pecho de la Naturaleza.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Corres desnudo por el bosque con tu nuevo amigo, libre tal vez por primera vez en tu vida. Haz una tirada de Riesgo. Busca en el mazo de Supervivientes a Kodiak Colby y añádelo a tus Seguidores."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Hombre, agradezco que me salvaras, pero no voy a mamar nada.\" El elegante hombre parece abatido y cabizbajo. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/kodiak-colby.mp3"
+    },
+    {
+      "id": "10-1",
+      "sheet": 10,
+      "card": 1,
+      "title": "FELICIA DAY",
+      "trigger": "Si Felicia está en juego y no está exiliada, y una enfermera química, médico o psiquiatra está en juego:",
+      "description": "\"Felicia es un desastre. La pobre parece desesperada por disociarse a sí misma de las cosas horribles que tuvo que soportar. Ella era una actriz antes de que el mundo se fuera al infierno, y tiene alguna necesidad de representar el papel de alguien que no sea ella misma. Los resultados son extraños y muchas veces los sitúa a ella y a otros en un gran riesgo. ¿Pero qué están dispuestos a hacer? Cada jugador no exiliado, debe votar para el exilio con un pulgar hacia arriba o hacia abajo. La opción con más votos toma efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "\"He hecho una lista de los antipsicóticos que somos capaces de encontrar en las farmacias locales o el hospital. Si podemos mantener su medicación podríamos calmarla. \"Siempre que Felicia provoca una carta de respuesta para ser activada, añadir la siguiente opción a esa carta: (Opción Alternativa - Cualquier jugador puede descartarse de un medicamento. Si lo hacen, no pasa nada.)"
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "Exilia al jugador que controla a Felicia."
+        }
+      ],
+      "audio_file": "audio/felicia-day.mp3"
+    },
+    {
+      "id": "10-2",
+      "sheet": 10,
+      "card": 2,
+      "title": "ROBERTA PLUM",
+      "trigger": "Si Roberta Plum está en juego y no está exiliada:",
+      "description": "Roberta tiene resaca y el ruido en la colonia le está matando la cabeza. Pero ella tiene la solución: jarabe para la tos y harina.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Los jugadores deben eliminar conjuntamente 1 carta de alimento y 1 carta de medicina del juego. Roberta espolvorea una hornada de sus Galletas Especiales de Tiempo Somnoliento y se las entrega a todo el mundo que puede. Los Supervivientes Indefensos no cuentan en el número total de Supervivientes para determinar la cantidad de comida necesaria de la colonia o cuando se coloquen zombis en las 2 próximas fases de la colonia."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Repulsivos, todo el mundo rechaza la solicitud de Roberta. No pasa nada."
+        },
+        {
+          "label": "ALTERNATIVA",
+          "text": "Repulsivos, todo el mundo rechaza la solicitud de Roberta. No pasa nada."
+        }
+      ],
+      "audio_file": "audio/roberta-plum.mp3"
+    },
+    {
+      "id": "10-3",
+      "sheet": 10,
+      "card": 3,
+      "title": "EL ESPIRITU DE LA NAVIDAD",
+      "trigger": "Si el jugador solicita una carta, y otro jugador satisface la solicitud:",
+      "description": "Has visto lo peor de las personas desde que todo esto comenzó, pero a veces ves la generosidad y el cuidado que el espíritu humano es capaz de hacer. Y nunca deja de conmoverte.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Al ver este gesto de alguien con casi nada, dando a otro humano algo que necesitaba inspira un sentido de generosidad en la Colonia. Hasta 3 veces, cualquier jugador puede dar a otro jugador una carta. Puedes poner las cartas recibidas en tu mano, que no tienen que ser jugadas inmediatamente."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Este acto de altruismo se detiene en tu camino. No puedes ayudar pero piensas en las decisiones que has estado haciendo. Solías ser una buena persona. No puedes identificar por qué te detuviste, pero sentiste que una parte de ti estaba muerta. Sin embargo, tal vez no lo es. Si el jugador es el traidor, pueden revelar su carta de objetivo secreto, y robar una nueva carta del mazo de cartas no usadas."
+        }
+      ],
+      "audio_file": "audio/el-espiritu-de-la-navidad.mp3"
+    },
+    {
+      "id": "10-4",
+      "sheet": 10,
+      "card": 4,
+      "title": "ABANDONAR",
+      "trigger": "Si en cualquier momento el jugador tira un dado y se cae de la superficie de juego:",
+      "description": "Cada vez que notas algo brillante y colorido te avergüenzas por ello, como llevar ropa de moda de otra época. La Tierra está blanquecina y muerta, y cuanto más tiempo pasas en la selva en busca de algún desecho trivial que hará la vida sólo moderadamente más sostenible, más te sientes como un tonto. No más. La preocupación parece tan pasada de moda como el color, y ya la tienes.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"Voy por mi cuenta por un tiempo. Pase lo que pase\". Toma un Superviviente que controles y barájalo de nuevo en el mazo de supervivientes. Retira la miniatura del tablero."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "\"Necesito un descanso. Quizá sea hora de un \"accidente de trabajo\"\". Elige un Superviviente y tira el dado de Riesgo. El Superviviente elegido sufre el resultado. Si el Superviviente recibe daño, pero no muere, baraja su carta en el mazo de Supervivientes. Retira su miniatura del tablero y coloca una ficha de Superviviente Indefenso en la colonia."
+        }
+      ],
+      "audio_file": "audio/abandonar.mp3"
+    },
+    {
+      "id": "10-5",
+      "sheet": 10,
+      "card": 5,
+      "title": "VAMOS A RESOLVER ESTO",
+      "trigger": "Si cualquier jugador, excepto tú, acusa a otro jugador (incluso a ti) de ser un traidor o traidor, pero no requiere una votación para el exilio:",
+      "description": "\"¡Basta!\" grita, arrojando las herramientas. \"¡He aguantado hasta aquí con tu basura! Siempre estás cuestionándome, cuando todo lo que hago es mover mi trasero por este lugar. ¿Qué es lo que haces aquí aparte de darle a la lengua? Bueno, fastídiate. Todo el mundo en círculo. Esto lo resolvemos aquí y ahora!\"",
+      "options": [
+        {
+          "label": "OPCION UNICA",
+          "text": "Se lleva a cabo de inmediato, una votación de exilio para el jugador \"acusado\". Esto se debe tratar como cualquier otra votación de exilio. Si la votación fracasa, coloca esta carta en la parte frontal del jugador acusado. A partir de ahora, cualquier persona que desee llamar a una votación de exilio contra ese jugador debe gastar un dado de acción de cualquier resultado para hacerlo."
+        }
+      ],
+      "audio_file": "audio/vamos-a-resolver-esto.mp3"
+    },
+    {
+      "id": "10-6",
+      "sheet": 10,
+      "card": 6,
+      "title": "NO HE MUERTO AUN",
+      "trigger": "Si el jugador realiza una búsqueda y al menos 3 Supervivientes han muerto:",
+      "description": "Caíste de lado, y tu brazo izquierdo quedó atrapado torpemente debajo de ti. Gritas con la explosión de dolor en el codo, pero al niño muerto que te acecha no le importa. Se arrastra hasta tu cuerpo, escapando gemidos de su boca crujiente. Tiras de tu brazo libre, pero es demasiado tarde - las mandíbulas descienden a tu carne expuesta. Pero de repente la cabeza del zombi se abre de golpe, salpicándote de un líquido fétido y de carne corrupta. Tu rescatador está por encima de ti y te ofrece una mano. Jadeas. \"¿Tú? Pero, ¿cómo? Pensamos que eras ... quiero decir ... ¡Te vi morir!\"",
+      "options": [
+        {
+          "label": "OPCION UNICA",
+          "text": "Elije un Superviviente que murió y se retiró del juego. Añádelo a tus Seguidores y coloca su miniatura en la colonia. Subes 1 punto la moral."
+        }
+      ],
+      "audio_file": "audio/no-he-muerto-aun.mp3"
+    },
+    {
+      "id": "10-7",
+      "sheet": 10,
+      "card": 7,
+      "title": "TU, ESTUPIDO EGOISTA",
+      "trigger": "Si el jugador intenta poner fin a su turno, sin contribuir a la crisis actual:",
+      "description": "\"Una y otra vez, tú fallas en ayudar a la colonia cuando la ayuda es más necesaria. Estamos hartos de tu actitud y estamos hartos de tus excusas. ¡Esto es así! Echa una mano o sal fuera\". Cada jugador con 1 o más Supervivientes en la colonia debe votar con un pulgar hacia arriba o hacia abajo. La opción con más votos tiene efecto.",
+      "options": [
+        {
+          "label": "PULGAR ARRIBA",
+          "text": "El jugador debe aportar al menos 1 carta a la crisis actual. Si no es así, pierdes 1 punto de moral."
+        },
+        {
+          "label": "PULGAR ABAJO",
+          "text": "Todos los jugadores deben votar de inmediato si procede o no el exilio al jugador actual. Si el jugador no es exiliado bajas 1 punto la moral."
+        }
+      ],
+      "audio_file": "audio/tu-estupido-egoista.mp3"
+    },
+    {
+      "id": "10-8",
+      "sheet": 10,
+      "card": 8,
+      "title": "HE SUFRIDO LO PEOR",
+      "trigger": "Si un superviviente no exiliado controlado por el jugador muere:",
+      "description": "Del mismo modo que tristemente se alejan de ti, tú logras estirar la pata, \"Por favor, no te vayas.\" Tus compañeros gritan alarmados, ya que no estaban seguros de que estuvieras muerto.",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "\"Lo sentimos mucho, amigo. No estoy seguro de cómo decirte esto, pero tus heridas son tan graves ... no podemos correr el riesgo de traerte de vuelta.\" Asientes con la cabeza. Tú harías lo mismo. Cierras los ojos cuando la pistola apunta a tu cara. El Superviviente permanece muerto."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Intentas protestar, para que te llevan de vuelta, pero todo lo que sale de los Supervivientes que se acaban de morir son incoherentes gemidos. Retira todas las heridas de los Supervivientes que se acaban de morir. Coloca su miniatura en la colonia y tira el dado de Riesgo. Si sacas cualquier símbolo, trátalo como un resultado de mordedura."
+        }
+      ],
+      "audio_file": "audio/he-sufrido-lo-peor.mp3"
+    },
+    {
+      "id": "10-9",
+      "sheet": 10,
+      "card": 9,
+      "title": "UN SABOR EXTRAÑO",
+      "trigger": "Si en cualquier momento cualquier jugador toma una bebida:",
+      "description": "Ha pasado mucho tiempo desde que tuviste una bebida real, y tú sabes quien regresó con una preciosa botella tuya justo ayer. Te la mostraron, pero nunca se ofrecieron a compartir. ¡Típico! Así que la robaste cuando se fueron durante el día. Lo probaste, sólo que ahora te sientes enfermo y tu boca sabe a sangre. ¿Estaba envenenado? ¿Te han engañado?",
+      "options": [
+        {
+          "label": "OPCION 1",
+          "text": "Tú mismo te lo causaste. El jugador que tomó una bebida debe elegir un Superviviente que controle. Haz la tirada de Riesgo 3 veces, y aplica los resultados al Superviviente elegido."
+        },
+        {
+          "label": "OPCION 2",
+          "text": "Esperas a que tu envenenador vuelva y lo estrangulas mientras duerme. Efectivamente, encuentras un pequeño frasco lleno con un fluido misterioso. Bebes, rezando que sea un antídoto. El jugador que tomó una bebida debe elegir un Superviviente que no controle. Mata el Superviviente."
+        }
+      ],
+      "audio_file": "audio/un-sabor-extrano.mp3"
+    }
+  ]
+}
