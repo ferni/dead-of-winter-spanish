@@ -45,6 +45,8 @@ body {
   text-align: center;
 }
 
+.screen-draw { position: relative; }
+
 .start-inner, .draw-inner {
   width: 100%;
   max-width: 380px;
@@ -132,6 +134,29 @@ body {
   border: 1px solid #3a302a;
 }
 .btn-ghost:active { background: #2a221d; color: #ece4d4; }
+
+/* Pinned link-style "undo" affordance at the bottom of the draw screen. */
+.back-link {
+  position: absolute;
+  left: 50%;
+  bottom: calc(env(safe-area-inset-bottom) + 24px);
+  transform: translateX(-50%);
+  appearance: none;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-size: 15px;
+  color: #8a7a66;
+  text-decoration: underline;
+  text-decoration-color: rgba(138, 122, 102, 0.45);
+  text-underline-offset: 4px;
+  padding: 10px 16px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
+}
+.back-link:active { color: #ece4d4; text-decoration-color: #ece4d4; }
+.back-link.hidden { display: none; }
 
 .btn-lg {
   font-size: 19px;
