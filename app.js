@@ -87,40 +87,64 @@
       li.appendChild(text);
       optionsList.appendChild(li);
     });
+
+    // Pre-load this card's narration so playback is instant.
+    prepareAudio(card);
   }
 
   // ===== Audio =====
-  function stopAudio() {
+  function prepareAudio(card) {
+    releaseAudio();
+    if (!card || !card.audio_file) return;
+    const a = new Audio();
+    a.preload = 'auto';
+    a.src = card.audio_file;
+    a.addEventListener('ended', () => {
+      $('#audio-btn').classList.remove('playing');
+    });
+    a.addEventListener('error', () => {
+      $('#audio-btn').classList.remove('playing');
+    });
+    // Kick off the network fetch now (preload=auto is a hint; load() makes it explicit).
+    try { a.load(); } catch (_) { /* ignore */ }
+    state.audio = a;
+  }
+
+  function releaseAudio() {
     if (state.audio) {
-      state.audio.pause();
-      state.audio.currentTime = 0;
+      try {
+        state.audio.pause();
+        state.audio.removeAttribute('src');
+        state.audio.load();
+      } catch (_) { /* ignore */ }
       state.audio = null;
     }
     $('#audio-btn').classList.remove('playing');
   }
 
+  // Kept as the public "stop everything" hook used by screen transitions.
+  function stopAudio() {
+    releaseAudio();
+  }
+
   function toggleAudio() {
+    if (!state.audio) return;
     const btn = $('#audio-btn');
-    if (state.audio && !state.audio.paused) {
-      stopAudio();
+    if (!state.audio.paused) {
+      // Currently playing -> stop and reset to start
+      try {
+        state.audio.pause();
+        state.audio.currentTime = 0;
+      } catch (_) { /* ignore */ }
+      btn.classList.remove('playing');
       return;
     }
-    if (!state.currentCard || !state.currentCard.audio_file) return;
-    state.audio = new Audio(state.currentCard.audio_file);
-    state.audio.addEventListener('ended', () => {
-      btn.classList.remove('playing');
-      state.audio = null;
-    });
-    state.audio.addEventListener('error', () => {
-      btn.classList.remove('playing');
-      state.audio = null;
-    });
+    // Paused / not yet started -> play from beginning
+    try { state.audio.currentTime = 0; } catch (_) { /* ignore */ }
     state.audio.play().then(() => {
       btn.classList.add('playing');
     }).catch(() => {
-      // play() can reject if user gesture chain breaks or file missing
       btn.classList.remove('playing');
-      state.audio = null;
     });
   }
 
