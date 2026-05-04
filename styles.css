@@ -125,6 +125,14 @@ body {
 }
 .btn-secondary:active { background: #4a3f37; }
 
+/* Subtle, low-emphasis button — used for the "go back" undo affordance. */
+.btn-ghost {
+  background: transparent;
+  color: #a8998a;
+  border: 1px solid #3a302a;
+}
+.btn-ghost:active { background: #2a221d; color: #ece4d4; }
+
 .btn-lg {
   font-size: 19px;
   padding: 18px 28px;

@@ -149,6 +149,13 @@
   }
 
   // ===== Flow =====
+  function updateBackButton() {
+    // The "back" affordance only makes sense when a card has actually been shown.
+    const btn = $('#back-btn');
+    if (!btn) return;
+    btn.classList.toggle('hidden', !state.currentCard);
+  }
+
   function start() {
     if (!state.cards.length) return;
     if (!state.started) {
@@ -156,6 +163,7 @@
       state.started = true;
     }
     $('#pass-message').classList.add('hidden');
+    updateBackButton();
     showScreen('draw');
   }
 
@@ -168,9 +176,17 @@
 
   function onNext() {
     stopAudio();
-    state.currentCard = null;
+    // Keep state.currentCard around so the player can recover from an accidental tap.
     $('#pass-message').classList.remove('hidden');
+    updateBackButton();
     showScreen('draw');
+  }
+
+  function onBack() {
+    if (!state.currentCard) return;
+    stopAudio();
+    renderCard(state.currentCard); // re-renders & re-arms preload
+    showScreen('card');
   }
 
   // ===== Init =====
@@ -198,6 +214,7 @@
       if (action === 'start') start();
       else if (action === 'draw') onDraw();
       else if (action === 'next') onNext();
+      else if (action === 'back') onBack();
     });
   }
 
