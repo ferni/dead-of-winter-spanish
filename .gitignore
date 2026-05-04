@@ -1,0 +1,21 @@
+# Source material — the original card sheets aren't needed at runtime
+Cards/
+
+# macOS cruft
+.DS_Store
+**/.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Local secrets — never commit your ElevenLabs key
+.env
+.env.local
+
+# Python scratch
+__pycache__/
+*.pyc
+
+# Working scratchpad for placeholder generation
+audio/_silence.mp3
